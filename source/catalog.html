@@ -15,31 +15,31 @@
     <nav class="main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a href="#">Каталог товаров</a>
+          <a class="main-navigation__link" href="#">Каталог товаров</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#">Вязание на заказ</a>
+          <a class="main-navigation__link" href="#">Вязание на заказ</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#">Поиск по сайту</a>
+          <a class="main-navigation__link" href="#">Поиск по сайту</a>
         </li>
         <!--иконка будет реализована как псевдоэлемент-->
         <li class="main-navigation__item">
-          <a href="#">Корзина: пока пуста</a>
+          <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
         </li>
         <!--иконка будет реализована как псевдоэлемент-->
       </ul>
     </nav>
   </header>
-  <main class="main__wrapper">
-    <h1 class="main__main-word">Каталог товаров</h1>
+  <main class="main">
+    <h1 class="main__title">Каталог товаров</h1>
     <section class="catalog__wrapper">
       <h2 class="visually-hidden">наши лучшие товары!</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
           <img src="./img/photo-1-mobile.png" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
           <div class="catalog__text-container">
-            <h3 class="catalog__main-word">Зайчик-попрыгайчик</h3>
+            <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
             <p class="catalog__info">Рост 30 см, вес 200 г</p>
             <!--разделяющая черта будет реализована как border-->
             <a class="catalog__link" href="#">
@@ -51,7 +51,7 @@
         <li class="catalog__item">
           <img src="./img/photo-2-mobile.png" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
           <div class="catalog__text-container">
-            <h3 class="catalog__main-word">Корзинка для белья</h3>
+            <h3 class="catalog__title">Корзинка для белья</h3>
             <p class="catalog__info">Диаметр 15 см, высота 10 см</p>
             <!--разделяющая черта будет реализована как border-->
             <a class="catalog__link" href="#">
@@ -63,7 +63,7 @@
         <li class="catalog__item">
           <img src="./img/photo-3-mobile.png" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
           <div class="catalog__text-container">
-            <h3 class="catalog__main-word">Большая корзинка для игрушек</h3>
+            <h3 class="catalog__title">Большая корзинка для игрушек</h3>
             <p class="catalog__info">Диаметр 30 см, высота 30 см</p>
             <!--разделяющая черта будет реализована как border-->
             <a class="catalog_link" href="#">
@@ -79,14 +79,16 @@
       <ul class="about-product__list">
         <li class="about-product__item">
           <!--иконка будет реализована как псевдоэлемент-->
-          <h4 class="about-product__main-word">Процесс производства</h4>
+          <h4 class="about-product__title">Процесс производства</h4>
           <div class="about-product__video-container">
             <!--фон-видео будет реализован как фон-->
             <!--иконка будет реализована как абсолютно спозиционированый элемент-->
             <img src="./img/play-svg.svg" class="about-product__video-start-icon" width="101" height="77" alt="начать воспроизведение видео">
           </div>
           <div class="about-product__text-container">
-            <p class="about-product__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <p class="about-product__text">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
             <a class="about-product__button" href="#">Сделать заказ</a>
           </div>
         </li>
@@ -94,7 +96,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="social__wrapper">
+    <section class="social">
       <h3 class="visually-hidden">пишите нам в соцсетях</h3>
       <ul class="social__list">
         <li class="social__item">
@@ -110,7 +112,7 @@
     </section>
     <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
     <section class="developer__wrapper">
-      <h3 class="developer__main-word">Разработано</h3>
+      <h3 class="developer__title">Разработано</h3>
       <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
     </section>
   </footer>

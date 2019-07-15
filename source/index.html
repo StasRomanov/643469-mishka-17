@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="main-header__logo-link" href="#">
+    <a class="main-header__logo-link">
       <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
     </a>
     <a class="menu-opener" href="#">
@@ -31,37 +31,37 @@
       </ul>
     </nav>
   </header>
-  <main class="main__wrapper">
+  <main class="main">
     <h1>Милые штуки ручной работы для дома</h1>
-    <section class="product-type__wrapper">
+    <section class="product-type">
       <h2 class="visually-hidden">типы продукции</h2>
       <ul class="product-type__list">
         <li class="product-type__item">
-          <h2 class="product-type__main-words">Предметы интерьера</h2>
+          <h2 class="product-type__title">Предметы интерьера</h2>
           <img src="./img/interior-svg.svg" class="product-type__icon" width="40" height="62" alt="настольная лампа">
         </li>
         <li class="product-type__item">
-          <h2 class="product-type__main-words">Детские игрушки</h2>
+          <h2 class="product-type__title">Детские игрушки</h2>
           <img src="./img/toy-svg.svg" class="product-type__icon" width="60" height="60" alt="игрушки">
         </li>
       </ul>
     </section>
-    <section class="product-week__wrapper">
-      <h2 class="product-week__main-word">Вязаные корзинки</h2>
+    <section class="product-week">
+      <h2 class="product-week__title">Вязаные корзинки</h2>
       <p class="visually-hidden">товар недели</p>
-      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+      <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
       <ul>
         <li class="product-week__specifications">
-          <p>Цвет:</p>
-          <p>«Тиффани»/серый</p>
+          <p class="product-week__info">Цвет:</p>
+          <p class="product-week__info">«Тиффани»/серый</p>
         </li>
         <li class="product-week__specifications">
-          <p>Диаметр:</p>
-          <p>25 см</p>
+          <p class="product-week__info">Диаметр:</p>
+          <p class="product-week__info">25 см</p>
         </li>
         <li class="product-week__specifications">
-          <p>Высота:</p>
-          <p>15 см</p>
+          <p class="product-week__info">Высота:</p>
+          <p class="product-week__info">15 см</p>
         </li>
       </ul>
       <img src="./img/triple-set-mobile.png" class="product-week__picture" height="315" width="260" alt="вязаные корзинки (3 штуки)">
@@ -69,9 +69,9 @@
       <a href="#" class="product-week__link"></a>
     </section>
     <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
-    <section class="about-us__wrapper">
+    <section class="about-us">
       <h2 class="visually-hidden">информация о нас и нашей компании</h2>
-      <h2 class="about-us__main-word">Коротко о нас:</h2>
+      <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
         <!--иконки будут реализованы как псевдоэлементы-->
         <li class="about-us__item">
@@ -87,15 +87,15 @@
           <p class="about-us__text-content">Связано вручную с любовью и умилением</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__text-content">Поддержка отечественного производителя</p>
+          <p class="about-us__text">Поддержка отечественного производителя</p>
         </li>
         <li class="about-us__item">
           <p class="about-us__text-content">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section>
-    <section class="feedback__wrapper">
-      <h2 class="feedback__main-words">Отзывы</h2>
+    <section class="feedback">
+      <h2 class="feedback__title">Отзывы</h2>
       <!--реализовано как список так как в последствии должны появится другие отзвы которые будут добавлятся в этот список-->
       <ul class="feedback__list">
         <li class="feedback__item">
@@ -108,7 +108,7 @@
           <p class="feedback__author-nickname">@misssssiskras</p>
         </li>
       </ul>
-      <div class="button__wrapper">
+      <div class="button">
         <!--иконки будут реализованы как фон-->
         <button class="button__arrow"></button>
         <button class="button__arrow"></button>
@@ -116,7 +116,7 @@
       <a class="feedback__link" href="#">Написать</a>
     </section>
     <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
-    <section class="contacts__wrapper">
+    <section class="contacts">
       <ul class="contacts__list">
         <li class="contacts__item">
           <p class="contacts__text-content">e-mail:</p>
@@ -124,23 +124,25 @@
         </li>
         <li class="contacts__item">
           <p class="contacts__text-content">адрес:</p>
-          <p class="contacts__text-content contacts__company-site">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+          <p class="contacts__text-content contacts__company-site">
+            г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
+          </p>
         </li>
       </ul>
     </section>
-    <section class="map__wrapper">
+    <section class="map">
       <h2 class="visually-hidden">тут наш адрес по карте</h2>
       <!--карта будет реализована как фон-->
       <!--иконка будет реализована как абсолютно спозиционированый элемент-->
       <img src="./img/map-pin-svg.svg" class="map__icon" width="66" height="101" alt="мы тут живем!">
     </section>
-    <section class="write-us__wrapper">
+    <section class="write-us">
       <h2 class="visually-hidden">напишите нам мы будем рады любому отзыву!</h2>
       <a class="write-us__link" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="main-footer">
-    <section class="social__wrapper">
+    <section class="social">
       <h3 class="visually-hidden">пишите нам в соцсетях</h3>
       <ul class="social__list">
         <li class="social__item">
@@ -155,8 +157,8 @@
       </ul>
     </section>
     <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
-    <section class="developer__wrapper">
-      <h3 class="developer__main-word">Разработано</h3>
+    <section class="developer">
+      <h3 class="developer__title">Разработано</h3>
       <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
     </section>
   </footer>

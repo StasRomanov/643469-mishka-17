@@ -32,11 +32,11 @@
     </nav>
   </header>
   <main class="main__wrapper">
-    <h1 class="main__main-word">Каталог товаров</h1>
+    <h1 class="main__title">Каталог товаров</h1>
     <p class="main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post" name="all-info">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post" name="all-info">
       <fieldset class="form__filed">
-        <legend class="form__main-word">Тип</legend>
+        <legend class="form__title">Тип</legend>
         <ul class="form__radio-list">
           <li class="form__radio-item">
             <input class="form__radio" type="radio" name="radio" value="Accessory for the interior" id="accessory">
@@ -49,7 +49,7 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__main-word">Цвет</legend>
+        <legend class="form__title">Цвет</legend>
         <ul class="form__checkbox-list">
           <li class="form__checkbox-item">
             <input class="form__checkbox" type="checkbox" name="checkbox-1" value="White" id="white" checked>
@@ -78,15 +78,15 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__main-word">ФИО</legend>
+        <legend class="form__title">ФИО</legend>
         <ul class="form__text-list">
           <li class="form__text-item">
             <label class="form__text-label" for="name">Имя:</label>
-            <input class="form__input form__input--text" type="text" placeholder="Введите ваше имя*" id="name" name="Name">
+            <input class="form__input form__input--text" type="text" placeholder="Введите ваше имя*" id="name" name="Name" required>
           </li>
           <li class="form__text-item">
             <label class="form__text-label" for="surname">Фамилия:</label>
-            <input class="form__input form__input--text" type="text" placeholder="Укажите фамилию*" id="surname" name="Surname">
+            <input class="form__input form__input--text" type="text" placeholder="Укажите фамилию*" id="surname" name="Surname" required>
           </li>
           <li class="form__text-item">
             <label class="form__text-label" for="patronymic">Отчество:</label>
@@ -95,25 +95,25 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__main-word">тел</legend>
+        <legend class="form__title">тел</legend>
         <ul class="form__tel-list">
           <li class="form__tel-item">
             <!--иконка будет реализована как псевдоэлемент-->
-            <input class="form__input form__input--tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone">
+            <input class="form__input form__input--tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__main-word">E-mail</legend>
+        <legend class="form__title">E-mail</legend>
         <ul class="form__email-list">
           <li class="form__email-item">
             <!--иконка будет реализована как псевдоэлемент-->
-            <input class="form__input form__input--email" type="text" placeholder="Ваш Email*" id="e-mail" name="E-mail">
+            <input class="form__input form__input--email" type="text" placeholder="Ваш Email*" id="e-mail" name="E-mail" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__main-word">Доп</legend>
+        <legend class="form__title">Доп</legend>
         <textarea class="form__input form__input--feedback" placeholder="Опишите все ваши пожелания к заказу" id="feedback" name="Feedback"></textarea>
       </fieldset>
       <fieldset class="form__filed">
@@ -139,7 +139,7 @@
     </section>
     <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
     <section class="developer__wrapper">
-      <h3 class="developer__main-word">Разработано</h3>
+      <h3 class="developer__title">Разработано</h3>
       <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
     </section>
   </footer>
