@@ -1,0 +1,15 @@
+.main {
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-position: 50% -16px;
+  background-repeat: no-repeat;
+}
+
+.main_title {
+  @include normalText();
+  font-size: 27px;
+  line-height: 1.12;
+  text-align: center;
+  color: #010000;
+  padding: 71px 38px 0 38px;
+  margin-bottom: 122px;
+}

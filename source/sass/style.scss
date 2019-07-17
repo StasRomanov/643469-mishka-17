@@ -1,0 +1,57 @@
+$main-color: #63d1bb;
+$main-text-color: #444444;
+$main-hearer-text-color: #000000;
+
+@mixin normalText() {
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin normalList() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "header";
+
+@import "main";
+
+@import "product-type";
+
+@import "product-week";

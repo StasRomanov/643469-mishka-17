@@ -1,0 +1,32 @@
+.product-type__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $main-color;
+  color: #ffffff;
+}
+
+.product-type__title {
+  @include normalText();
+  font-size: 19px;
+  line-height: 1.26;
+  color: #ffffff;
+  max-width: 130px;
+}
+
+.product-type__item {
+  padding: 26px 28px;
+  min-height: 51px;
+  background-repeat: no-repeat;
+  &--things {
+    background-image: url("../img/interior-svg.svg");
+    background-position: 87% 57%;
+  }
+  &--toy {
+    background-image: url("../img/toy-svg.svg");
+    background-position: 90% 46%;
+  }
+  &:nth-child(2n) {
+    background-color: #56c3b2;
+  }
+}
