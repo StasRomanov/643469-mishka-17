@@ -12,6 +12,7 @@
 
 .contacts__list {
   @include normalList();
+  margin-bottom: 37px;
 }
 
 .contacts__item {
