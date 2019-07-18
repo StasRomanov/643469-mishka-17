@@ -1,0 +1,59 @@
+.main__title--catalog {
+  @include normalText();
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 1.11;
+  font-size: 27px;
+  padding: 71px 20px 77px 18px;
+  margin-bottom: 31px;
+}
+
+.catalog__list {
+  @include normalList();
+  padding: 0 30px;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.catalog__text-container {
+  border: solid 1px #ececec;
+  padding: 26px 20px 20px 27px;
+}
+
+.catalog__title,
+.catalog__info {
+  @include normalText();
+}
+
+.catalog__title {
+  line-height: 1.42;
+  color: $main-hearer-text-color;
+  font-size: 17px;
+  margin-bottom: 5px;
+  max-width: 200px;
+}
+
+.catalog__info {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 2.31;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $catalog-color;
+}
+
+.catalog__link {
+  @include normalText();
+  color: $main-hearer-text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 6px 10px 0;
+}
+
+.catalog__price {
+  @include normalText();
+  margin-top: 2px;
+}

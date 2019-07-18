@@ -1,6 +1,7 @@
 $main-color: #63d1bb;
 $main-text-color: #444444;
 $main-hearer-text-color: #000000;
+$catalog-color: #ececec;
 
 @mixin normalText() {
   font-weight: bold;
@@ -80,3 +81,5 @@ input[type="radio"].visually-hidden {
 @import "map";
 
 @import "write-us";
+
+@import "main--catalog";
