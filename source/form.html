@@ -8,32 +8,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <header class="main-header">
-    <a class="main-header__logo-link" href="#">
-      <img src="./img/mishka-logo-mobile-svg-copy.svg" class="main-header__logo-icon" alt="mishka" width="86" height="35">
+<header class="main-header">
+  <div class="main-header__wrapper">
+    <a class="main-header__logo-link">
+      <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
     </a>
-    <a class="menu-opener" href="#">
-      <img src="./img/menu-svg.svg" class="main-header__menu-icon-svg" alt="меню" height="14" width="20">
-    </a>
-    <nav class="main-navigation">
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a href="./index.html">Каталог товаров</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">Вязание на заказ</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <!--иконка будит реализована как псевдоэлемент-->
-        <li class="main-navigation__item">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-        <!--иконка будет реализована как псевдоэлемент-->
-      </ul>
-    </nav>
-  </header>
+    <a class="menu-opener menu-opener--open" href="#"></a>
+  </div>
+  <nav class="main-navigation main-navigation--close">
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item">
+        <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
+      </li>
+      <li class="main-navigation__item">
+        <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--search">
+        <a href="#" class="main-navigation__link">Поиск по сайту</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--basket">
+        <a href="#" class="main-navigation__link">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+</header>
   <main class="main">
     <h1 class="main__title">Каталог товаров</h1>
     <p class="main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -140,7 +138,6 @@
         </li>
       </ul>
     </section>
-    <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
     <section class="developer">
       <h3 class="developer__title">Разработано</h3>
       <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
