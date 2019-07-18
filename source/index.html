@@ -9,13 +9,13 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="main-header__logo-link">
-      <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
-    </a>
-    <a class="menu-opener" href="#">
-      <img src="./img/menu-svg.svg" class="menu-icon-svg" alt="меню" height="14" width="20">
-    </a>
-    <nav class="main-navigation">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo-link">
+        <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+      </a>
+      <a class="menu-opener menu-opener--open" href="#"></a>
+    </div>
+    <nav class="main-navigation main-navigation--close">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
@@ -23,11 +23,11 @@
         <li class="main-navigation__item">
           <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
         </li>
-        <li class="main-navigation__item">
+        <li class="main-navigation__item main-navigation__item--search">
           <a href="#" class="main-navigation__link">Поиск по сайту</a>
         </li>
         <!--иконка будет реализована как псевдоэлемент-->
-        <li class="main-navigation__item">
+        <li class="main-navigation__item main-navigation__item--basket">
           <a href="#" class="main-navigation__link">Корзина: пока пуста</a>
         </li>
         <!--иконка будет реализована как псевдоэлемент-->
@@ -163,5 +163,6 @@
       <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
