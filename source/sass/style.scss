@@ -20,6 +20,19 @@ $main-hearer-text-color: #000000;
   list-style: none;
 }
 
+@mixin normalButton() {
+  @include normalText();
+  color: $main-text-color;
+  text-transform: uppercase;
+  min-height: 48px;
+  border: solid 2px $main-text-color;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
@@ -58,13 +71,6 @@ input[type="radio"].visually-hidden {
 
 @import "about-us";
 
-/*временно так как эти блоки размечать пока не надо*/
-
-/*
-.feedback,
-.map {
-  display: none;
-}
-*/
-
 @import "main-footer";
+
+@import "feedback";

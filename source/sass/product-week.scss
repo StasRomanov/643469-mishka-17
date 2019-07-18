@@ -65,16 +65,7 @@
 }
 
 .product-week__link {
-  @include normalText();
-  color: $main-text-color;
-  text-transform: uppercase;
-  min-height: 48px;
-  border: solid 2px $main-text-color;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 1.5px;
+  @include normalButton();
   margin-bottom: 27px;
 }
 
