@@ -21,11 +21,11 @@
   height: 20px;
   background-color: transparent;
   &--open {
-    background-image: url("../img/icon-menu-open.svg");
+    background-image: url("../../img/icon-menu-open.svg");
     margin-top: 4px;
   }
   &--close {
-    background-image: url("../img/icon-menu-close.svg");
+    background-image: url("../../img/icon-menu-close.svg");
   }
 }
 
@@ -56,10 +56,10 @@
     left: 31px;
   }
   &--search::after {
-    background-image: url("../img/search-svg.svg");
+    background-image: url("../../img/search-svg.svg");
   }
   &--basket::after {
-    background-image: url("../img/cart-svg.svg");
+    background-image: url("../../img/cart-svg.svg");
     width: 21px;
   }
 }

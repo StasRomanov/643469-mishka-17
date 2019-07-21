@@ -24,7 +24,7 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  background-image: url("../img/video-svg.svg");
+  background-image: url("../../img/video-svg.svg");
   background-repeat: no-repeat;
   top: 29px;
   left: 33px;
@@ -32,14 +32,14 @@
 
 .about-product__video-container {
   height: 150px;
-  background-image: url("../img/video-mobile@1x.jpg");
+  background-image: url("../../img/video-mobile@1x.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about-product__text-container {
-  padding: 29px 30px 0 30px;
+  padding: 29px 33px 0 33px;
 }
 
 .about-product__text {
@@ -48,9 +48,11 @@
   font-size: 13px;
   font-weight: normal;
   margin-bottom: 25px;
+  padding-right: 14px;
 }
 
 .about-product__button {
   @include normalText();
   @include normalButton();
+  margin-bottom: 30px;
 }

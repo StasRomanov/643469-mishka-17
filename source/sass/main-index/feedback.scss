@@ -56,15 +56,17 @@
   border: solid 1px #ececec;
   width: 130px;
   background-color: #ffffff;
-  background-image: url("../img/huge-arrow-left-svg.svg");
+  background-image: url("../../img/huge-arrow-left-svg.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  &--left {
-    border-right: none;
-  }
-  &--right {
-    transform: rotate(180deg);
-  }
+}
+
+.button__arrow--left {
+  border-right: none;
+}
+
+.button__arrow--right {
+  transform: rotate(180deg);
 }
 
 .feedback__link {
