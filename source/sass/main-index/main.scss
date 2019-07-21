@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
 }
 
-.main_title {
+.main__title {
   @include normalText();
   font-size: 27px;
   line-height: 1.12;
@@ -12,4 +12,5 @@
   color: #010000;
   padding: 71px 38px 0 38px;
   margin-bottom: 122px;
+  letter-spacing: 1px;
 }
