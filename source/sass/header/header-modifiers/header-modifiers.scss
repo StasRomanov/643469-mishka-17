@@ -1,0 +1,32 @@
+.menu-opener--close {
+  background-image: url("../../../img/icon-menu-close.svg");
+  margin-top: 4px;
+}
+
+.menu-opener--open {
+  background-image: url("../../../img/icon-menu-open.svg");
+}
+
+.main-navigation__item--search::after,
+.main-navigation__item--basket::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  left: 31px;
+}
+
+.main-navigation__item--search::after {
+  background-image: url("../../img/search-svg.svg");
+}
+
+.main-navigation__item--basket::after {
+  background-image: url("../../img/cart-svg.svg");
+  width: 21px;
+}
+
+.main-navigation--close {
+  display: none;
+}
