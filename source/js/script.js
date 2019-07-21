@@ -5,13 +5,10 @@ menuOpener.addEventListener("click", function (evt) {
   evt.preventDefault();
   menuOpener.removeAttribute('href');
   if (menuOpener.classList.contains('menu-opener--open')){
-    menuOpener.classList.remove('menu-opener--open');
-    navigation.classList.remove('main-navigation--close');
     menuOpener.classList.add('menu-opener--close');
-  }
-  else {
-    menuOpener.classList.add('menu-opener--open');
-    navigation.classList.add('main-navigation--close');
+  } else {
     menuOpener.classList.remove('menu-opener--close');
   }
+  menuOpener.classList.toggle('menu-opener--open');
+  navigation.classList.toggle('main-navigation--close');
 });
