@@ -1,16 +1,3 @@
-.form__input--text,
-.form__input--tel,
-.form__input--email {
-  @include normalForm();
-  width: 260px;
-  height: 52px;
-  box-shadow: inset 0px -2px 0 0 $main-hearer-text-color;
-  opacity: 0.3;
-  font-size: 17px;
-  line-height: 1.06;
-  color: rgba(68, 68, 68, 0.3);
-}
-
 .form__title--tel,
 .form__title--email {
   margin-bottom: 5px;
@@ -28,29 +15,12 @@
   margin-bottom: 35px;
 }
 
-.form__input--feedback {
-  @include normalForm();
-  width: 228px;
-  border: solid 2px $main-text-color;
-  background-color: #ffffff;
-  padding: 12px 14px;
-  font-size: 17px;
-  opacity: 0.3;
-  color: rgba(68, 68, 68, 0.3);
-  font-weight: normal;
-  max-width: 228px;
-  min-height: 114px;}
-
 .form__title--bonus {
   margin-bottom: 25px;
 }
 
 .form__filed--bonus::after {
   display: none;
-}
-
-.form__filed--info {
-  @include normalForm();
 }
 
 .form__filed--bonus {
