@@ -8,11 +8,23 @@
 }
 
 .form__filed--tel {
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 }
 
 .form__filed--email {
+  @include normlFieldset();
   margin-bottom: 35px;
+  position: relative;
+}
+
+.form__filed--email::after {
+  content: '';
+  position: absolute;
+  width: 179px;
+  height: 1px;
+  background-color: $main-color;
+  top: 7px;
+  right: 0;
 }
 
 .form__title--bonus {

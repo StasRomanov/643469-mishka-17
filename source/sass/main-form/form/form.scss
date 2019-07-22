@@ -149,7 +149,7 @@
 .form__input-tel,
 .form__input-email {
   @include normalForm();
-  width: 260px;
+  width: 100%;
   height: 52px;
   box-shadow: inset 0px -2px 0 0 $main-hearer-text-color;
   opacity: 0.3;
@@ -177,3 +177,25 @@
 }
 
 @import "form-modifiers/form-modifiers";
+
+.form__tel-item::after,
+.form__email-item::after {
+  @include normalPseudo();
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  right: 7px;
+  border: none;
+  opacity: 0.2;
+}
+
+.form__tel-item::after {
+  background-image: url("../../../img/phone-svg.svg");
+}
+
+.form__email-item::after {
+  width: 32px;
+  background-image: url("../../../img/mail-svg.svg");
+}
