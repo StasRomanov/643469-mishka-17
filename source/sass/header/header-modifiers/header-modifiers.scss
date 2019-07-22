@@ -1,6 +1,6 @@
 .menu-opener--close {
   background-image: url("../../../img/icon-menu-close.svg");
-  margin-top: 4px;
+  top: 29px;
 }
 
 .menu-opener--open {
@@ -19,14 +19,21 @@
 }
 
 .main-navigation__item--search::after {
-  background-image: url("../../img/search-svg.svg");
+  background-image: url("../../../img/search-svg.svg");
 }
 
 .main-navigation__item--basket::after {
-  background-image: url("../../img/cart-svg.svg");
+  background-image: url("../../../img/cart-svg.svg");
   width: 21px;
 }
 
 .main-navigation--close {
   display: none;
+}
+
+.menu-opener--close ~ .main-navigation{
+  position: absolute;
+  background-color: #ffffff;
+  top: 77px;
+  left: 0;
 }

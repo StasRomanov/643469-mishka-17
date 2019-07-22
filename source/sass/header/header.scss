@@ -27,13 +27,13 @@
 }
 
 .main-navigation__item {
-  width: 320px;
   min-height: 79px;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .main-navigation__link {
@@ -41,6 +41,10 @@
   line-height: 1.41;
   font-size: 17px;
   color: $main-hearer-text-color;
+}
+
+.main-navigation {
+  width: 100%;
 }
 
 @import "header-modifiers/header-modifiers";
