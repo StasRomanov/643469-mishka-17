@@ -1,6 +1,7 @@
 var menuOpener = document.querySelector(".menu-opener");
 var navigation = document.querySelector(".main-navigation");
 
+navigation.classList.add('main-navigation--close');
 menuOpener.addEventListener("click", function (evt) {
   evt.preventDefault();
   menuOpener.removeAttribute('href');

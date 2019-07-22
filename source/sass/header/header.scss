@@ -1,25 +1,21 @@
 .main-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   flex-wrap: wrap;
-}
-
-.main-header__wrapper {
-  flex-shrink: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  position: relative;
   padding: 19px 31px;
 }
 
 .menu-opener {
-  margin-left: 66px;
   width: 20px;
   background-repeat: no-repeat;
   height: 20px;
   background-color: transparent;
+  position: absolute;
+  top: 32px;
+  right: 31px;
 }
 
 .main-header__logo-link {
