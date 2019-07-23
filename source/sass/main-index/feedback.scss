@@ -46,7 +46,7 @@
 
 .button {
   display: flex;
-  width: 260px;
+  width: 100%;
   min-height: 51px;
   margin-bottom: 39px;
 }
@@ -54,7 +54,7 @@
 .button__arrow {
   @include normalList();
   border: solid 1px #ececec;
-  width: 130px;
+  width: 50%;
   background-color: #ffffff;
   background-image: url("../../img/huge-arrow-left-svg.svg");
   background-repeat: no-repeat;
