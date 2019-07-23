@@ -30,3 +30,17 @@
   line-height: 0.95;
   font-size: 19px;
 }
+
+.social__icon:hover {
+  fill: #46c1ae;
+}
+
+.social__icon:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+.developer__title:active,
+.developer__icon:active {
+ opacity: 0.3;
+}

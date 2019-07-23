@@ -37,6 +37,14 @@
   position: relative;
 }
 
+.form__label:hover.form__label::after {
+  border: solid 2px #62d1ba;
+}
+
+.form__label:active.form__label::after {
+  border: solid 2px rgba(68, 68,68, 0.3);
+}
+
 .form__radio-label::after {
   @include normalPseudo();
   width: 36px;
@@ -152,10 +160,26 @@
   width: 100%;
   height: 52px;
   box-shadow: inset 0px -2px 0 0 $main-hearer-text-color;
-  opacity: 0.3;
   font-size: 17px;
   line-height: 1.06;
+  color: #444444;
+}
+
+.form__input-text::placeholder,
+.form__input-tel::placeholder,
+.form__input-email::placeholder {
   color: rgba(68, 68, 68, 0.3);
+}
+
+.form__input-text:hover,
+.form__input-tel:hover,
+.form__input-email:hover,
+.form__input-text:active,
+.form__input-tel:active,
+.form__input-email:active,
+.form__input-tel:focus,
+.form__input-email:focus {
+  box-shadow: inset 0px -2px 0 0 #62d1ba;
 }
 
 .form__input-feedback {
@@ -164,12 +188,21 @@
   background-color: #ffffff;
   padding: 12px 14px;
   font-size: 17px;
-  opacity: 0.3;
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
   font-weight: normal;
   max-width: calc(100% - 30px);
   min-height: 114px;
   width: calc(100% - 30px);
+}
+
+.form__input-feedback:hover,
+.form__input-feedback:focus,
+.form__input-feedback:active {
+  border: solid 2px #62d1ba;
+}
+
+.form__input-feedback::placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .form__filed-info {
@@ -178,19 +211,6 @@
 
 @import "form-modifiers/form-modifiers";
 
-.form__tel-item::after,
-.form__email-item::after {
-  @include normalPseudo();
-  width: 25px;
-  height: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 50%;
-  right: 7px;
-  border: none;
-  opacity: 0.2;
-}
-
 .form__tel-item::after {
   background-image: url("../../../img/phone-svg.svg");
 }
@@ -198,4 +218,21 @@
 .form__email-item::after {
   width: 32px;
   background-image: url("../../../img/mail-svg.svg");
+}
+
+.form__input-icon {
+  position: absolute;
+  opacity: 0.2;
+  top: 50%;
+  right: 7px;
+}
+
+.form__input-tel:hover + .form__input-icon,
+.form__input-email:hover + .form__input-icon,
+.form__input-tel:active + .form__input-icon,
+.form__input-email:active + .form__input-icon,
+.form__input-tel:focus + .form__input-icon,
+.form__input-email:focus + .form__input-icon {
+  fill: #62d1ba;
+  opacity: 1;
 }

@@ -21,8 +21,24 @@
   background-repeat: no-repeat;
 }
 
+.product-type__item:hover {
+  background-color: #59d5bc;
+}
+
+.product-type__item:active {
+  opacity: 0.3;
+}
+
 .product-type__item:nth-child(2n) {
   background-color: #56c3b2;
+}
+
+.product-type__item:nth-child(2n):hover {
+  background-color: #46c1ae;
+}
+
+.product-type__item:nth-child(2n):active {
+  opacity: 0.3;
 }
 
 @import "product-type-modifiers/product-type-modifiers";

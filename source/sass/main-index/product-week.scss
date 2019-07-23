@@ -70,6 +70,14 @@
   margin-bottom: 27px;
 }
 
+.product-week__link:hover {
+  @include normalButtonHover();
+}
+
+.product-week__link:active {
+  @include normalButtonActive();
+}
+
 .decoration-zigzag {
   transform: rotate(180deg);
 }

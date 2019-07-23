@@ -10,6 +10,14 @@
   border: solid 1px $catalog-color;
 }
 
+.about-product__item:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-product__item:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .about-product__title {
   @include normalText();
   padding: 25px 20px 24px 90px;
@@ -38,6 +46,15 @@
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.about-product__video-start-icon:hover {
+  transform: scale(1.2);
+}
+
+.about-product__video-start-icon:active {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
 
 .about-product__text-container {
