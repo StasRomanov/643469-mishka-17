@@ -5,46 +5,6 @@
   padding: 0 30px;
 }
 
-.social {
-  box-shadow: 0 1px 0 0 #ececec
-}
+@import "social";
 
-.social__list {
-  @include normalList();
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 62px 23px 57px;
-}
-
-.developer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 39px 30px 38px;
-}
-
-.developer__title {
-  @include normalText();
-  line-height: 0.95;
-  font-size: 19px;
-}
-
-.social__icon {
-  fill: #231F20;
-}
-
-.social__icon:hover {
-  fill: #46c1ae;
-}
-
-.social__icon:active {
-  fill: #46c1ae;
-  opacity: 0.3;
-}
-
-.developer__title:active,
-.developer__icon:active {
- opacity: 0.3;
-}
+@import "developer";

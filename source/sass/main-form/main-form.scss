@@ -1,5 +1,3 @@
-@import "main-form-modifiers";
-
 .main__description {
   @include normalText();
   line-height: 1.85;
@@ -10,4 +8,6 @@
   letter-spacing: 0.4px;
 }
 
-@import "form/form";
+@import "form-filed";
+
+@import "form-modifiers/main-form-modifiers";

@@ -1,14 +1,3 @@
-.main__title--catalog {
-  @include normalText();
-  background-color: #f1f1f1;
-  text-align: center;
-  line-height: 1.11;
-  font-size: 27px;
-  margin-bottom: 31px;
-  padding: 74px 20px 74px 18px;
-  letter-spacing: 1px;
-}
-
 .catalog__list {
   @include normalList();
   padding: 0 30px;
@@ -83,3 +72,5 @@
   @include normalText();
   margin-top: 2px;
 }
+
+@import "catalog-modifiers/catalog-modifiers";

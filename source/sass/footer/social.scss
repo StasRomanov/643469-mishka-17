@@ -1,0 +1,25 @@
+.social {
+  box-shadow: 0 1px 0 0 #ececec
+}
+
+.social__list {
+  @include normalList();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 62px 23px 57px;
+}
+
+.social__icon {
+  fill: #231F20;
+}
+
+.social__icon:hover {
+  fill: #46c1ae;
+}
+
+.social__icon:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
