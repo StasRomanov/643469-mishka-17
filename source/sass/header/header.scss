@@ -43,11 +43,11 @@
   color: $main-hearer-text-color;
 }
 
-.main-navigation__item:hover .main-navigation__link{
+.main-navigation__item:hover .main-navigation__link {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.main-navigation__item:active .main-navigation__link{
+.main-navigation__item:active .main-navigation__link {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -61,7 +61,6 @@
 
 .main-header__logo-link:active {
   opacity: 0.3;
-
 }
 
 @import "header-modifiers/header-modifiers";

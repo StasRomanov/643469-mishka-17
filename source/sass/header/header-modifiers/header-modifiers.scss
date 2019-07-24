@@ -28,12 +28,12 @@
   height: 19px;
 }
 
-.main-navigation__item:hover.main-navigation__item--basket::after {
+.main-navigation__item--basket:hover::after {
   background-image: url("../../../img/cart-svg-hover.svg");
   opacity: 1;
 }
 
-.main-navigation__item:active.main-navigation__item--basket::after {
+.main-navigation__item--basket:active::after {
   background-image: url("../../../img/cart-svg-hover.svg");
   opacity: 0.3;
 }
