@@ -9,7 +9,7 @@
 
 .main-navigation__item--search::after,
 .main-navigation__item--basket::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 18px;
   height: 18px;
@@ -42,7 +42,7 @@
   display: none;
 }
 
-.menu-opener--close ~ .main-navigation{
+.menu-opener--close ~ .main-navigation {
   position: absolute;
   background-color: #ffffff;
   top: 77px;

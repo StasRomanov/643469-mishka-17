@@ -35,7 +35,7 @@
 }
 
 .about-us__item p::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 55px;
   height: 55px;
@@ -44,7 +44,7 @@
   left: 0;
 }
 
-.about-us__item:first-child p:after{
+.about-us__item:first-child p::after {
   background-image: url("../../img/icon-1-svg.svg");
   width: 32px;
   height: 37px;
@@ -52,13 +52,13 @@
   left: 7px;
 }
 
-.about-us__item:nth-child(2) p:after{
+.about-us__item:nth-child(2) p::after {
   background-image: url("../../img/icon-3-svg.svg");
   width: 47px;
   height: 27px;
 }
 
-.about-us__item:nth-child(3) p:after{
+.about-us__item:nth-child(3) p::after {
   background-image: url("../../img/icon-5-svg.svg");
   width: 34px;
   height: 28px;
@@ -66,7 +66,7 @@
   left: 8px;
 }
 
-.about-us__item:nth-child(4) p:after{
+.about-us__item:nth-child(4) p::after {
   background-image: url("../../img/icon-2-svg.svg");
   width: 35px;
   height: 35px;
@@ -74,7 +74,7 @@
   left: 3px;
 }
 
-.about-us__item:nth-child(5) p:after{
+.about-us__item:nth-child(5) p::after {
   background-image: url("../../img/icon-4-svg.svg");
   width: 55px;
   height: 23px;
@@ -82,7 +82,7 @@
   left: -6px;
 }
 
-.about-us__item:nth-child(6) p:after{
+.about-us__item:nth-child(6) p::after {
   background-image: url("../../img/icon-6-svg.svg");
   width: 33px;
   height: 33px;

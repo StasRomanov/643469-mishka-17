@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   src: url("../fonts/opensans.woff2");
 }
 
 body {
   background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   margin: 0;
   box-sizing: border-box;
@@ -26,38 +26,23 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 @import "variables/var";
-
 @import "mixin/mixin";
-
 @import "header/header";
-
 @import "main-index/main";
-
 @import "main-index/product-type";
-
 @import "main-index/product-week";
-
 @import "main-index/about-us";
-
 @import "footer/main-footer";
-
 @import "main-index/feedback";
-
 @import "main-index/contacts";
-
 @import "main-index/map";
-
 @import "main-index/write-us";
-
 @import "main-catalog/main-catalog";
-
 @import "main-catalog/about-product";
-
 @import "main-form/main-form";
