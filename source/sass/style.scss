@@ -1,48 +1,17 @@
-@font-face {
-  font-family: "Open Sans", "Arial", sans-serif;
-  src: url("../fonts/opensans.woff2");
-}
-
-body {
-  background-color: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "base";
+@import "fonts";
 @import "variables/var";
 @import "mixin/mixin";
-@import "header/header";
-@import "main-index/main";
-@import "product-type/product-type";
-@import "product-week/product-week";
-@import "about-us/about-us";
-@import "footer/main-footer";
-@import "feedback/feedback";
-@import "contact/contacts";
-@import "map/map";
-@import "write-us/write-us";
-@import "main-catalog/main-catalog";
-@import "about-product/about-product";
-@import "main-form/main-form";
+@import "blocks/header/header";
+@import "blocks/main-index/main";
+@import "blocks/product-type/product-type";
+@import "blocks/product-week/product-week";
+@import "blocks/about-us/about-us";
+@import "blocks/footer/main-footer";
+@import "blocks/feedback/feedback";
+@import "blocks/contacts/index";
+@import "blocks/map/map";
+@import "blocks/write-us/write-us";
+@import "blocks/main-catalog/main-catalog";
+@import "blocks/about-product/index";
+@import "blocks/main-form/main-form";

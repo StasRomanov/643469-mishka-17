@@ -104,7 +104,7 @@
   border: none;
   left: -60px;
   top: -8px;
-  background-image: url("../../img/tick-mobile-svg.svg");
+  background-image: url("../../../img/tick-mobile-svg.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -210,12 +210,12 @@
 }
 
 .form__tel-item::after {
-  background-image: url("../../img/phone-svg.svg");
+  background-image: url("../../../img/phone-svg.svg");
 }
 
 .form__email-item::after {
   width: 32px;
-  background-image: url("../../img/mail-svg.svg");
+  background-image: url("../../../img/mail-svg.svg");
 }
 
 .form__input-icon {
