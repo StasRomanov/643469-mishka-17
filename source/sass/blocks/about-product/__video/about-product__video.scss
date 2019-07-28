@@ -1,0 +1,19 @@
+.about-product__video-container {
+  height: 150px;
+  background-image: url("../../../../img/video-mobile@1x.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+}
+
+.about-product__video-start-icon:hover {
+  transform: scale(1.2);
+}
+
+.about-product__video-start-icon:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+}

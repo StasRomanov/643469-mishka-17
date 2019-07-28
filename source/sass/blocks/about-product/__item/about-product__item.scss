@@ -1,0 +1,11 @@
+.about-product__item {
+  border: solid 1px $catalog-color;
+}
+
+.about-product__item:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-product__item:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}

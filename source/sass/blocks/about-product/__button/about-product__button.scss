@@ -1,0 +1,5 @@
+.about-product__button {
+  @include normalText();
+  @include normalButton();
+  margin-bottom: 30px;
+}

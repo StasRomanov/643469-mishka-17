@@ -1,0 +1,12 @@
+.about-product__text-container {
+  padding: 29px 33px 0 33px;
+}
+
+.about-product__text {
+  @include normalText();
+  line-height: 1.85;
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 25px;
+  padding-right: 14px;
+}

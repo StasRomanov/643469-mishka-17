@@ -4,14 +4,6 @@
   margin-bottom: 39px;
 }
 
-.about-us__title {
-  @include normalText();
-  line-height: 1.2;
-  letter-spacing: 1.3px;
-  margin-bottom: 30px;
-  font-size: 25px;
-}
-
 .about-us__list {
   @include normalList();
   display: flex;

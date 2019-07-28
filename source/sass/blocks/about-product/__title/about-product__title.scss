@@ -1,0 +1,19 @@
+.about-product__title {
+  @include normalText();
+  padding: 25px 20px 24px 90px;
+  font-size: 17px;
+  line-height: 1.41;
+  color: $main-hearer-text-color;
+  position: relative;
+}
+
+.about-product__title::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/video-svg.svg");
+  background-repeat: no-repeat;
+  top: 29px;
+  left: 33px;
+}
