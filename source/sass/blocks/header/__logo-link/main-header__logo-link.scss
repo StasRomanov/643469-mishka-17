@@ -9,3 +9,9 @@
 .main-header__logo-link:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-header__logo-link {
+    margin-left: 66px;
+  }
+}

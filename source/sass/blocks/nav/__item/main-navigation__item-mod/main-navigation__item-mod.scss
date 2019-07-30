@@ -28,3 +28,40 @@
   background-image: url("../img/cart-svg-hover.svg");
   opacity: 0.3;
 }
+
+.main-navigation__item--text {
+  height: 0;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__item--search {
+    order: 1;
+    height: 88px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 83px;
+    margin: 0 0 0 324px;
+  }
+
+  .main-navigation__item--search .main-navigation__link {
+    font-size: 0;
+  }
+
+  .main-navigation__item--basket {
+    margin: 0;
+    order: 2;
+    padding-left: 75px;
+    width: 185px;
+    padding-bottom: 8px;
+  }
+
+  .main-navigation__item--basket .main-navigation__link {
+    @include normalText();
+    line-height: 1.41;
+    font-size: 17px;
+  }
+
+  .main-navigation__item--text {
+    margin: 0 10px 0 auto;
+  }
+}

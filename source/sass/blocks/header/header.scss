@@ -7,3 +7,14 @@
   position: relative;
   padding: 19px 31px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-header {
+    padding: 0;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 25px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}

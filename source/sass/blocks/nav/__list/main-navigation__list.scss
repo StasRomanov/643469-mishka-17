@@ -1,3 +1,12 @@
 .main-navigation__list {
   @include normalList();
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__list {
+    padding: 0 40px 0 48px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -88px;
+  }
+}

@@ -1,3 +1,9 @@
 .main-navigation--close {
   display: none;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation--close {
+    display: block;
+  }
+}

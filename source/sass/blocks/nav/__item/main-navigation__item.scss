@@ -17,3 +17,13 @@
 }
 
 @import "main-navigation__item-mod/main-navigation__item-mod";
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__item {
+    order: 3;
+    width: auto;
+    box-shadow: none;
+    min-height: 59px;
+    margin-right: 36px;
+  }
+}

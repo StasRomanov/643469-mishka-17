@@ -9,3 +9,9 @@
 }
 
 @import "__menu-opener-mod/main-header__menu-opener-mod";
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-header__menu-opener {
+    display: none;
+  }
+}
