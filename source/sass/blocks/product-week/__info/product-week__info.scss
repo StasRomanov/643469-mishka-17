@@ -1,0 +1,9 @@
+.product-week__info {
+  @include normalText();
+  line-height: 40px;
+  color: $main-text-color;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+@import "__info-mod/product-week__info-mod";

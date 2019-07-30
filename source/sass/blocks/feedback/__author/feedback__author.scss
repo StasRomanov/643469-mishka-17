@@ -1,0 +1,19 @@
+.feedback__author,
+.feedback__author-nickname {
+  @include normalText();
+}
+
+.feedback__author {
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 0.2px;
+  margin-bottom: 6px;
+}
+
+.feedback__author-nickname {
+  font-weight: normal;
+  line-height: 1.76;
+  color: $main-text-color;
+  padding-left: 2px;
+  letter-spacing: 1px;
+}

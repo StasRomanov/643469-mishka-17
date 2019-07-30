@@ -1,0 +1,8 @@
+.social__list {
+  @include normalList();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 62px 23px 57px;
+}

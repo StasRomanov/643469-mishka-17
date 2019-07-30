@@ -1,0 +1,7 @@
+.form__title {
+  @include normalText();
+  color: $main-color;
+  line-height: 0.94;
+  font-size: 17px;
+  text-transform: uppercase;
+}

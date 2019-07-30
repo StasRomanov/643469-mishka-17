@@ -1,0 +1,14 @@
+.form__label {
+  @include normalText();
+  font-size: 17px;
+  line-height: 1.06;
+  position: relative;
+}
+
+.form__label:hover.form__label::after {
+  border: solid 2px #62d1ba;
+}
+
+.form__label:active.form__label::after {
+  border: solid 2px rgba(68, 68, 68, 0.3);
+}

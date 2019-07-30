@@ -1,0 +1,12 @@
+.product-week__link {
+  @include normalButton();
+  margin-bottom: 27px;
+}
+
+.product-week__link:hover {
+  @include normalButtonHover();
+}
+
+.product-week__link:active {
+  @include normalButtonActive();
+}

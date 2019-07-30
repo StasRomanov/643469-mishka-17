@@ -1,0 +1,6 @@
+.about-us__list {
+  @include normalList();
+  display: flex;
+  flex-direction: column;
+  padding-top: 58px;
+}

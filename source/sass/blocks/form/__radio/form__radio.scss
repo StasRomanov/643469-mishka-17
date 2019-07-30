@@ -1,0 +1,22 @@
+.form__radio-label::after {
+  @include normalPseudo();
+  width: 36px;
+  height: 36px;
+  border: solid 2px #444444;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: -62px;
+  top: -10px;
+}
+
+.form__radio:checked ~ .form__label::before {
+  @include normalPseudo();
+  border: none;
+  border-radius: 50%;
+  left: -50px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+  z-index: 2;
+}

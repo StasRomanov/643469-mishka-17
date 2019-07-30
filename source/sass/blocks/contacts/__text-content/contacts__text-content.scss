@@ -1,0 +1,8 @@
+.contacts__text-content {
+  @include normalText();
+  line-height: 40px;
+  color: $main-text-color;
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+}

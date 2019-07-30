@@ -1,0 +1,24 @@
+.feedback__button {
+  display: flex;
+  width: 100%;
+  min-height: 51px;
+  margin-bottom: 39px;
+}
+
+.feedback__button-arrow {
+  @include normalList();
+  border: solid 1px #ececec;
+  width: 50%;
+  background-color: #ffffff;
+  background-image: url("../img/huge-arrow-left-svg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feedback__button-arrow:hover {
+  opacity: 0.6;
+}
+
+.feedback__button-arrow:active {
+  opacity: 0.3;
+}

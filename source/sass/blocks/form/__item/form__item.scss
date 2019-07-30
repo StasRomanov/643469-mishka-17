@@ -1,0 +1,13 @@
+.form__item {
+  margin-bottom: 25px;
+}
+
+.form__tel-item::after {
+  background-image: url("../../../../img/phone-svg.svg");
+}
+
+.form__email-item::after {
+  width: 32px;
+  background-image: url("../../../../img/mail-svg.svg");
+}
+

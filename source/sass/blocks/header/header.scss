@@ -7,22 +7,3 @@
   position: relative;
   padding: 19px 31px;
 }
-
-.main-header__logo-link {
-  margin-top: 2px;
-}
-
-.main-navigation__list {
-  @include normalList();
-}
-
-.main-header__logo-link:hover {
-  opacity: 0.6;
-}
-
-.main-header__logo-link:active {
-  opacity: 0.3;
-}
-
-@import "../nav/navigation";
-@import "../nav/navigation-modifiers/navigation-modifiers";

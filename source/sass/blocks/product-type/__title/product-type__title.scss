@@ -1,0 +1,8 @@
+.product-type__title {
+  @include normalText();
+  font-size: 19px;
+  line-height: 1.26;
+  color: #ffffff;
+  max-width: 130px;
+  letter-spacing: 1px;
+}

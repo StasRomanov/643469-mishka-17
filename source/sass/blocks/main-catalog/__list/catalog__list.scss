@@ -1,0 +1,4 @@
+.catalog__list {
+  @include normalList();
+  padding: 0 30px;
+}

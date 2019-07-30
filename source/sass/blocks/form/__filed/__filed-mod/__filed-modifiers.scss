@@ -1,0 +1,31 @@
+.form__filed--tel {
+  margin-bottom: 37px;
+}
+
+.form__filed--email {
+  @include normlFieldset();
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.form__filed--email::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 81px);
+  height: 1px;
+  background-color: $main-color;
+  top: 7px;
+  right: 0;
+}
+
+.form__title--bonus {
+  margin-bottom: 25px;
+}
+
+.form__filed--bonus::after {
+  display: none;
+}
+
+.form__filed--bonus {
+  margin-bottom: 14px;
+}

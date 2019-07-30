@@ -4,14 +4,3 @@
   align-items: center;
   padding: 22px 39px 30px 38px;
 }
-
-.developer__title {
-  @include normalText();
-  line-height: 0.95;
-  font-size: 19px;
-}
-
-.developer__title:active,
-.developer__icon:active {
-  opacity: 0.3;
-}

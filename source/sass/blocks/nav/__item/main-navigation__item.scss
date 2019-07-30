@@ -1,0 +1,19 @@
+.main-navigation__item {
+  min-height: 79px;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.main-navigation__item:hover .main-navigation__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation__item:active .main-navigation__link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@import "main-navigation__item-mod/main-navigation__item-mod";

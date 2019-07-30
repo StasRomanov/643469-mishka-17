@@ -1,0 +1,6 @@
+.product-week__title {
+  @include normalText();
+  font-size: 25px;
+  color: $main-hearer-text-color;
+  margin: 0 0 6px 0;
+}

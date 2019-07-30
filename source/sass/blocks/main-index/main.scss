@@ -4,13 +4,4 @@
   background-repeat: no-repeat;
 }
 
-.main__title {
-  @include normalText();
-  font-size: 27px;
-  line-height: 1.12;
-  text-align: center;
-  color: #010000;
-  padding: 71px 30px 0 30px;
-  margin-bottom: 122px;
-  letter-spacing: 1px;
-}
+@import "main-mod/main--form";

@@ -1,11 +1,3 @@
 .write-us {
   padding: 39px 30px 38px 30px;
 }
-
-.write-us__link {
-  @include normalText();
-  @include normalButton();
-  font-size: 18px;
-  line-height: 1.11;
-  letter-spacing: 0.1px;
-}
