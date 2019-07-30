@@ -6,4 +6,5 @@
 .form__tel-list,
 .form__email-list {
   @include normalList();
+  margin-top: 5px;
 }
