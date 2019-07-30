@@ -1,0 +1,9 @@
+.feedback__text-content {
+  @include normalText();
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  color: $main-text-color;
+  margin-bottom: 27px;
+  letter-spacing: 0.4px;
+}

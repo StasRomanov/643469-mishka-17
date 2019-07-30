@@ -1,0 +1,8 @@
+.product-week__price {
+  @include normalText();
+  color: $main-text-color;
+  text-align: center;
+  line-height: 1.41;
+  font-size: 17px;
+  margin-bottom: 27px;
+}

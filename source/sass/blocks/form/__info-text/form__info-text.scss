@@ -1,0 +1,8 @@
+.form__info-text {
+  @include normalText();
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.14;
+  color: $main-text-color;
+  margin-bottom: 31px;
+}

@@ -1,0 +1,6 @@
+.contacts__title {
+  @include normalText();
+  line-height: 1.67;
+  font-size: 18px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+.form__text-label {
+  @include normalText();
+  font-size: 17px;
+  line-height: 1.06;
+  color: $main-hearer-text-color;
+  letter-spacing: 1px;
+}
+
+.form__text-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}

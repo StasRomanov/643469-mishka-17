@@ -3,36 +3,34 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <header class="main-header">
-    <a class="main-header__logo-link" href="./index.html">
-      <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
-    </a>
-    <a class="menu-opener" href="#">
-      <img src="./img/menu-svg.svg" class="menu-icon-svg" alt="меню" height="14" width="20">
-    </a>
-    <nav class="main-navigation">
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Каталог товаров</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Вязание на заказ</a>
-        </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Поиск по сайту</a>
-        </li>
-        <!--иконка будет реализована как псевдоэлемент-->
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
-        </li>
-        <!--иконка будет реализована как псевдоэлемент-->
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <h1 class="main__title">Каталог товаров</h1>
+<header class="main-header">
+  <a class="main-header__logo-link" href="./index.html">
+    <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+  </a>
+  <a class="main-header__menu-opener main-header__menu-opener--open" href="#"></a>
+  <nav class="main-navigation">
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item">
+        <a href="#" class="main-navigation__link">Каталог товаров</a>
+      </li>
+      <li class="main-navigation__item">
+        <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--search">
+        <a href="#" class="main-navigation__link">Поиск по сайту</a>
+      </li>
+      <li class="main-navigation__item main-navigation__item--basket">
+        <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <main class="main-catalog">
+    <h1 class="main-catalog__title">Каталог товаров</h1>
     <section class="catalog">
       <h2 class="visually-hidden">наши лучшие товары!</h2>
       <ul class="catalog__list">
@@ -41,10 +39,11 @@
           <div class="catalog__text-container">
             <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
             <p class="catalog__info">Рост 30 см, вес 200 г</p>
-            <!--разделяющая черта будет реализована как border-->
             <a class="catalog__link" href="#">
               <p class="catalog__price">1 200 руб.</p>
-              <img src="./img/cart-svg.svg" class="catalog__icon" width="20" height="19" alt="купить товар">
+              <svg width="21" height="18" class="catalog__icon">
+                <use xlink:href="./img/svg/sprite.svg#basket"></use>
+              </svg>
             </a>
           </div>
         </li>
@@ -53,7 +52,6 @@
           <div class="catalog__text-container">
             <h3 class="catalog__title">Корзинка для белья</h3>
             <p class="catalog__info">Диаметр 15 см, высота 10 см</p>
-            <!--разделяющая черта будет реализована как border-->
             <a class="catalog__link" href="#">
             <p class="catalog__price">690 руб.</p>
               <img src="./img/cart-svg.svg" class="catalog__icon" width="20" height="19" alt="купить товар">
@@ -65,9 +63,8 @@
           <div class="catalog__text-container">
             <h3 class="catalog__title">Большая корзинка для игрушек</h3>
             <p class="catalog__info">Диаметр 30 см, высота 30 см</p>
-            <!--разделяющая черта будет реализована как border-->
-            <a class="catalog_link" href="#">
-            <p class="catalog_price">1 500 руб.</p>
+            <a class="catalog__link" href="#">
+            <p class="catalog__price">1 500 руб.</p>
               <img src="./img/cart-svg.svg" class="catalog__icon" width="20" height="19" alt="купить товар">
             </a>
           </div>
@@ -78,11 +75,8 @@
       <h3 class="visually-hidden">о том как товар становится таким каким вы его видите</h3>
       <ul class="about-product__list">
         <li class="about-product__item">
-          <!--иконка будет реализована как псевдоэлемент-->
           <h4 class="about-product__title">Процесс производства</h4>
           <div class="about-product__video-container">
-            <!--фон-видео будет реализован как фон-->
-            <!--иконка будет реализована как абсолютно спозиционированый элемент-->
             <img src="./img/play-svg.svg" class="about-product__video-start-icon" width="101" height="77" alt="начать воспроизведение видео">
           </div>
           <div class="about-product__text-container">
@@ -100,21 +94,27 @@
       <h3 class="visually-hidden">пишите нам в соцсетях</h3>
       <ul class="social__list">
         <li class="social__item">
-          <img src="./img/insta-svg.svg" class="social__icon" width="22" height="21" alt="мы в инстагарм">
+          <svg width="22" height="22" class="social__icon">
+            <use xlink:href="./img/svg/sprite.svg#insta"></use>
+          </svg>
         </li>
         <li class="social__item">
-          <img src="./img/fb-svg.svg" class="social__icon" width="15" height="28" alt="мы в фэйсбуке">
+          <svg width="15" height="28" class="social__icon">
+            <use xlink:href="./img/svg/sprite.svg#fb"></use>
+          </svg>
         </li>
         <li class="social__item">
-          <img src="./img/twitter-svg.svg" class="social__icon" width="23" height="20" alt="мы в твитере">
+          <svg width="23" height="20" class="social__icon">
+            <use xlink:href="./img/svg/sprite.svg#tw"></use>
+          </svg>
         </li>
       </ul>
     </section>
-    <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
     <section class="developer">
       <h3 class="developer__title">Разработано</h3>
       <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
     </section>
   </footer>
+  <script src="js/menu-oppener.js"></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+.feedback__title {
+  @include normalText();
+  font-size: 25px;
+  margin-bottom: 24px;
+}

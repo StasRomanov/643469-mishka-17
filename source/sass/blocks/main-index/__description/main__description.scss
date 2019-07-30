@@ -1,0 +1,9 @@
+.main__description {
+  @include normalText();
+  line-height: 1.85;
+  padding: 24px 30px 20px 30px;
+  font-size: 13px;
+  font-weight: normal;
+  color: $main-text-color;
+  letter-spacing: 0.4px;
+}

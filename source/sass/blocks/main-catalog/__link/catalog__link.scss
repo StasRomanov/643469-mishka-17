@@ -1,0 +1,7 @@
+.catalog__link {
+  @include normalText();
+  color: $main-hearer-text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 6px 10px 0;
+}

@@ -1,0 +1,31 @@
+.catalog__title,
+.catalog__info {
+  @include normalText();
+}
+
+.catalog__title {
+  line-height: 1.42;
+  color: $main-hearer-text-color;
+  font-size: 17px;
+  margin-bottom: 5px;
+  max-width: 180px;
+}
+
+.catalog__title:hover {
+  opacity: 0.6;
+}
+
+.catalog__title:active {
+  opacity: 0.3;
+}
+
+.main-catalog__title {
+  @include normalText();
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 1.11;
+  font-size: 27px;
+  margin-bottom: 31px;
+  padding: 74px 20px 74px 18px;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,4 @@
+.feedback__list {
+  @include normalList();
+  margin-bottom: 29px;
+}
