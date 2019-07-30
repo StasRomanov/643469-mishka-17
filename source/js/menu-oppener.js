@@ -1,14 +1,19 @@
 var menuOpener = document.querySelector(".main-header__menu-opener");
 var navigation = document.querySelector(".main-navigation");
+var navigationClose = "main-navigation--close";
+var svgOpenMenu = "main-header__menu-opener--open";
+var svgCloseMenu = "main-header__menu-opener--close";
 
-navigation.classList.add('main-navigation--close');
-menuOpener.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  if (menuOpener.classList.contains('main-header__menu-opener--open')){
-    menuOpener.classList.add('main-header__menu-opener--close');
-  } else {
-    menuOpener.classList.remove('main-header__menu-opener--close');
-  }
-  menuOpener.classList.toggle('main-header__menu-opener--open');
-  navigation.classList.toggle('main-navigation--close');
-});
+window.onload = function () {
+  navigation.classList.add(navigationClose);
+  menuOpener.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (menuOpener.classList.contains(svgOpenMenu)){
+      menuOpener.classList.add(svgCloseMenu);
+    } else {
+      menuOpener.classList.remove(svgCloseMenu);
+    }
+    menuOpener.classList.toggle(svgOpenMenu);
+    navigation.classList.toggle(navigationClose);
+  });
+};
