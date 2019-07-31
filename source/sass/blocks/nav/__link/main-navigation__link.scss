@@ -5,13 +5,13 @@
   color: $main-hearer-text-color;
 }
 
-@import "__link-mod/main-navigation__link";
-
-@media (min-width: $tabletWidthCatalog) {
-  .main-navigation__link {
-    @include normalText();
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.7px;
+@media (max-width: $desktopWidth - 1px) {
+  @media (min-width: $tabletWidthCatalog) {
+    .main-navigation__link {
+      @include normalText();
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: 0.7px;
+    }
   }
 }

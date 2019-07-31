@@ -4,9 +4,15 @@
 
 @import "navigation-modifiers/navigation-modifiers";
 
-@media (min-width: $tabletWidthCatalog) {
-  .main-navigation {
-    margin-top: 23px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+@media (max-width: $desktopWidth - 1px) {
+  @media (min-width: $tabletWidthCatalog) {
+    .main-navigation {
+      margin-top: 23px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .catalog-body .main-navigation {
+      background-color: #f1f1f1;
+    }
   }
 }
