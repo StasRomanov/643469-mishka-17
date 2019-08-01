@@ -7,3 +7,13 @@
   background-image: url("../img/toy-svg.svg");
   background-position: 90% 46%;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-type__item--toy {
+    background-position: 241px 32px;
+  }
+
+  .product-type__item--things {
+    background-position: 258px 29px;
+  }
+}
