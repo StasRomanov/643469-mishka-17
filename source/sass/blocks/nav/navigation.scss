@@ -15,6 +15,9 @@
 @media (max-width: $tabletWidthCatalog - 1px) {
   .main-navigation {
     width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
   }
 }
 
