@@ -24,4 +24,12 @@
   opacity: 0.3;
 }
 
+@media (min-width: $tabletWidthCatalog) {
+  .product-type__item {
+    width: 50%;
+    background-color: #63d1bb;
+    padding: 29px 36px;
+  }
+}
+
 @import "product-type__item-modifiers/product-type-modifiers";

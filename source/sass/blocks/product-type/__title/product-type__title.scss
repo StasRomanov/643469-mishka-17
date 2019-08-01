@@ -6,3 +6,10 @@
   max-width: 130px;
   letter-spacing: 1px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-type__title {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}

@@ -1,3 +1,24 @@
 .decoration-zigzag {
   transform: rotate(180deg);
 }
+
+.zigzag-line {
+  display: none;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .zigzag-line {
+    display: block;
+    position: absolute;
+    bottom: -13%;
+    width: 100%;
+    height: 33px;
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .zigzag-line {
+    height: 39%;
+  }
+}
