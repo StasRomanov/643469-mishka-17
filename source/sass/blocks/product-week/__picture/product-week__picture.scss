@@ -2,3 +2,25 @@
   display: block;
   margin: 0 auto 20px auto;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__picture {
+    width: 333px;
+    height: 404px;
+    margin: 5px 0 0;
+    position: absolute;
+    right: 55px;
+    top: 146px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week__picture {
+    z-index: -1;
+    right: 52px;
+    top: 66px;
+    width: 525px;
+    height: 636px;
+    object-fit: contain;
+  }
+}

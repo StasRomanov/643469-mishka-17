@@ -1,0 +1,12 @@
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__text-wrapper {
+    max-width: 295px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week__text-wrapper {
+    margin: 0 0 83px 142px;
+  }
+}

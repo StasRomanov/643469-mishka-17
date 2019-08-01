@@ -22,3 +22,12 @@
     height: 39%;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .decoration-zigzag {
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    display: block;
+  }
+}

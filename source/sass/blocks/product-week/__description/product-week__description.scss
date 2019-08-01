@@ -6,3 +6,18 @@
   text-transform: uppercase;
   margin-bottom: 22px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__description {
+    max-width: 100px;
+    text-align: center;
+    margin: 0 12px 0 0;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week__description {
+    order: -1;
+    margin-right: 40px;
+  }
+}
