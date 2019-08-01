@@ -1,9 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   margin: 0;
-  box-sizing: border-box;
 }
 
 img {
@@ -24,8 +33,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-* {
-  box-sizing: border-box;
 }

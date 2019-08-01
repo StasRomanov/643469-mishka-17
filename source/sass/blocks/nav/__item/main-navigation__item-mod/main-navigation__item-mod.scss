@@ -29,7 +29,7 @@
   opacity: 0.3;
 }
 
-@media (max-width: $tabletWidthCatalog - 1px) {
+@media (max-width: $mobileWidth) {
   .main-navigation__item--search::after,
   .main-navigation__item--basket::after {
     top: 40%;

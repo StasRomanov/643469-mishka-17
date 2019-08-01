@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: $tabletWidthCatalog), (min-width: $desktopWidth) {
+@media (min-width: $tabletWidthCatalog) {
   .main-navigation--close {
     display: flex;
   }

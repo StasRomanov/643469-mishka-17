@@ -6,7 +6,7 @@
   display: block;
 }
 
-@media (max-width: $tabletWidthCatalog - 1px) {
+@media (max-width: $mobileWidth) {
   .main-navigation__link {
     flex-grow: 1;
     text-align: center;
