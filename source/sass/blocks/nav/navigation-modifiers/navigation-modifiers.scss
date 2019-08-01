@@ -2,8 +2,12 @@
   display: none;
 }
 
-@media (min-width: $tabletWidthCatalog) {
+@media (min-width: $tabletWidthCatalog), (min-width: $desktopWidth) {
   .main-navigation--close {
-    display: block;
+    display: flex;
+  }
+
+  .main-navigation__menu-opener {
+    display: none;
   }
 }

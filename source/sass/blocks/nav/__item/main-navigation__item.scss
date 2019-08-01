@@ -1,8 +1,7 @@
 .main-navigation__item {
   min-height: 79px;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   width: 100%;
@@ -16,72 +15,28 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: $desktopWidth - 1px) {
-  @media (min-width: $tabletWidthCatalog) {
-    .main-navigation__item {
-      order: 3;
-      width: auto;
-      box-shadow: none;
-      min-height: 59px;
-      margin-right: 36px;
-    }
+@media (max-width: $tabletWidthCatalog - 1px) {
+  .main-navigation__item {
+    justify-content: center;
+    align-items: stretch;
+    border-top: 1px solid #ececec;
+  }
+}
 
-    .main-navigation__item:nth-child(5),
-    .main-navigation__item:nth-child(6) {
-      display: none;
-    }
-
-    .main-navigation__item:nth-child(7) {
-      display: flex;
-    }
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__item {
+    width: 50%;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .main-navigation__item {
-    order: 0;
-    width: 234px;
-    border: none;
-    box-shadow: none;
-    min-height: 60px;
-  }
-
-  .main-navigation__item:first-child {
-    padding-left: 52px;
-    width: 182px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .main-navigation__item:nth-child(2) {
-    margin-right: 100px;
-    padding-left: 36px;
-  }
-
-  .main-navigation__item:nth-child(4) {
-    padding-right: 52px;
-  }
-
-  .main-navigation__item:first-child,
-  .main-navigation__item:nth-child(2) {
-    justify-content: right;
-  }
-
-  .main-navigation__item:nth-child(5) {
-    margin: 0;
-    margin-right: 18px;
-    margin-left: 17px;
-  }
-
-  .main-navigation__item:nth-child(6) {
-    justify-content: flex-start;
-    margin: 0;
+    width: 45.7%;
   }
 }
 
-@media (max-width: $desktopWidth - 1px) {
-  .main-navigation__item:nth-child(5),
-  .main-navigation__item:nth-child(6),
-  .main-navigation__item:nth-child(7) {
-    display: none;
+@media (min-width: $desktopWidth) {
+  .main-navigation__list:first-of-type .main-navigation__item:first-child {
+    border-right: 1px solid #ececec;
   }
 }

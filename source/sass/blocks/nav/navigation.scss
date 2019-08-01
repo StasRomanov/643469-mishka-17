@@ -1,18 +1,30 @@
 .main-navigation {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (max-width: $tabletWidthCatalog - 1px) {
+  .main-navigation {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    z-index: 1;
+  }
 }
 
 @import "navigation-modifiers/navigation-modifiers";
-
-@media (max-width: $desktopWidth - 1px) {
-  @media (min-width: $tabletWidthCatalog) {
-    .main-navigation {
-      margin-top: 23px;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .catalog-body .main-navigation {
-      background-color: #f1f1f1;
-    }
-  }
-}

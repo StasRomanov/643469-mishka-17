@@ -1,0 +1,31 @@
+.main-navigation__logo-link {
+  margin: 0 auto;
+  padding-top: 22px;
+  min-height: 80px;
+  text-align: center;
+}
+
+.main-navigation__logo-link:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__logo-link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__logo-link {
+    @include normalList;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__logo-link {
+    order: 2;
+    padding: 8px 0;
+    min-height: 90px;
+  }
+}

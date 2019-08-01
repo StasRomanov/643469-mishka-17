@@ -1,0 +1,17 @@
+.main-navigation__menu-opener {
+  width: 20px;
+  background-repeat: no-repeat;
+  height: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 32px;
+  right: 31px;
+}
+
+@media (min-width: $tabletWidthCatalog), (min-width: $desktopWidth) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@import "__menu-opener-mod/main-navigation__menu-opener-mod";

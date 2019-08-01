@@ -1,26 +1,25 @@
-.main-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-  flex-wrap: wrap;
-  position: relative;
-  padding: 19px 31px;
+@media (max-width: $tabletWidthCatalog - 1px) {
+  .main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: $tabletWidthCatalog) {
   .main-header {
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 25px 0 0;
-    box-shadow: none;
-    background-color: transparent;
+    padding: 0 50px;
+    margin-bottom: -61px;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .main-header {
-    position: relative;
-    padding: 0;
+    padding: 0 50px;
+    margin-bottom: -80px;
   }
 }
