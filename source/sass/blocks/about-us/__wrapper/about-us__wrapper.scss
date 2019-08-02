@@ -1,0 +1,19 @@
+.about-us__wrapper__list {
+  @include normalList();
+}
+
+.about-us__wrapper__list--first .about-us__item:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-us__wrapper {
+    width: 49%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about-us__wrapper {
+    width: 39.4%;
+  }
+}

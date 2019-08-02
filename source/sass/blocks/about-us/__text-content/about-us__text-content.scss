@@ -3,3 +3,10 @@
   line-height: 1.33;
   letter-spacing: 1.4px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-us__text-content {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}

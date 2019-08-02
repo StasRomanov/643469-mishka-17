@@ -4,3 +4,12 @@
   flex-direction: column;
   padding-top: 58px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 72px;
+  }
+}

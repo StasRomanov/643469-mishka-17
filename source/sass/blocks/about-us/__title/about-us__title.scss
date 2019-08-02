@@ -5,3 +5,18 @@
   margin-bottom: 30px;
   font-size: 25px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-us__title {
+    line-height: 1.16;
+    font-size: 43px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about-us__title {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-bottom: 29px;
+  }
+}
