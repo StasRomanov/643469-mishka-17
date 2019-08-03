@@ -2,3 +2,21 @@
   padding: 17px 29px 0 29px;
   color: $main-hearer-text-color;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .feedback {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 78px 45px 79px 45px;
+    align-items: end;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .feedback {
+    margin-left: 50px;
+    padding: 72px 45px 126px 174px;
+  }
+}
