@@ -6,3 +6,9 @@
   font-weight: normal;
   position: relative;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts__text-content {
+    letter-spacing: 1.5px;
+  }
+}

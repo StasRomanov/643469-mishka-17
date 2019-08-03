@@ -6,3 +6,9 @@
   color: rgb(70, 193, 174);
   opacity: 0.3;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts__company-site {
+    letter-spacing: 1.5px;
+  }
+}

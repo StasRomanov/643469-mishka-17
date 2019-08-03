@@ -2,3 +2,24 @@
   padding: 34px 29px 0 29px;
   color: $main-hearer-text-color;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts {
+    padding: 50px 85px 0 47px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .contact__wrapper,
+  .contacts,
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 343px;
+  }
+
+  .contacts {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}

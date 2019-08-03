@@ -20,3 +20,9 @@
   bottom: 4px;
   left: 1px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts__item:nth-child(1) .contacts__text-content:nth-of-type(2)::after {
+    width: 199px;
+  }
+}
