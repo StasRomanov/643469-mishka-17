@@ -5,7 +5,6 @@
   line-height: 2;
   color: $main-text-color;
   margin-bottom: 27px;
-  letter-spacing: 0.4px;
 }
 
 @media (min-width: $tabletWidthCatalog) {
@@ -19,7 +18,7 @@
 
 @media (min-width: $desktopWidth) {
   .feedback__text-content {
-    max-width: 780px;
+    padding-right: 93px;
     margin-bottom: 40px;
   }
 }

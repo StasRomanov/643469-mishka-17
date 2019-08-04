@@ -37,4 +37,11 @@
     background-position: 92% center;
   }
 }
+
 @import "product-type__item-modifiers/product-type-modifiers";
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-type__item {
+    background-position: 92.5% 55%;
+  }
+}

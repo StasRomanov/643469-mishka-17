@@ -6,3 +6,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .map {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .map {
+    position: absolute;
+    width: 525px;
+    height: 457px;
+    object-fit: contain;
+    right: 27px;
+    top: 70px;
+  }
+}

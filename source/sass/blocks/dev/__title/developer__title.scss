@@ -8,3 +8,9 @@
 .developer__icon:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .developer__title {
+    margin-right: 37px;
+  }
+}
