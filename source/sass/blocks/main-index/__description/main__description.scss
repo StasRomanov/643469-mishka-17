@@ -7,3 +7,20 @@
   color: $main-text-color;
   letter-spacing: 0.4px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main__description {
+    font-size: 17px;
+    line-height: 1.76;
+    padding: 49px 76px 20px 53px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main--form .main__description {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.76;
+  }
+}

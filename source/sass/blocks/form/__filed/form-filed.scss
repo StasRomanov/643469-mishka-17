@@ -18,3 +18,9 @@
 }
 
 @import "__filed-mod/form__filed-modifiers";
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed::after {
+    content: none;
+  }
+}

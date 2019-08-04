@@ -7,3 +7,11 @@
 }
 
 @import "__title-mod/form__title-modifiers";
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__title {
+    line-height: 0.94;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}

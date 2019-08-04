@@ -9,3 +9,23 @@
   background-color: #f1f1f3;
   line-height: 1.11;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main__title--form {
+    padding-top: 94px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    min-height: 79px;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main__title--form {
+    line-height: 1.08;
+    font-size: 53px;
+    padding-top: 91px;
+  }
+}
