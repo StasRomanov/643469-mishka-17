@@ -59,4 +59,8 @@
   .main-navigation__item--basket::after {
     left: -50px;
   }
+
+  .main-navigation__item--basket {
+    justify-content: flex-end;
+  }
 }

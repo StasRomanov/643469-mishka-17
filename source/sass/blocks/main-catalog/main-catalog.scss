@@ -1,0 +1,32 @@
+@media (min-width: $tabletWidthCatalog) {
+  @media (min-width: $desktopWidth - 1px) {
+    .main-catalog .zigzag-line {
+      display: block;
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-catalog .zigzag-line {
+    display: block;
+    background-color: #f1f1f1;
+    position: static;
+    width: 1150px;
+    height: 34px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog {
+      padding: 66px 50px 0 50px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog {
+    padding: 113px 51px 0 49px;
+  }
+}

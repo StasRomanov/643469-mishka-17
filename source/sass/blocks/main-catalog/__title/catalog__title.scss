@@ -29,3 +29,44 @@
   padding: 74px 20px 74px 18px;
   letter-spacing: 1px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .main-catalog__title {
+      font-size: 43px;
+      line-height: 1.16;
+      padding: 37px 20px 70px 18px;
+      letter-spacing: 1.2px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-catalog__title {
+    font-size: 53px;
+    line-height: 1.08;
+    padding: 92px 20px 86px 18px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog__title {
+      font-size: 20px;
+      line-height: 1.2;
+      max-width: 230px;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog__title {
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 216px;
+  }
+}

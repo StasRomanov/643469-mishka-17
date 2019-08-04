@@ -2,3 +2,19 @@
   @include normalList();
   padding: 0 30px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog__list {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}

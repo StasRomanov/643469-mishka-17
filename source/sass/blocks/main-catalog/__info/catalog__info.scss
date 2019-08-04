@@ -5,3 +5,24 @@
   padding-bottom: 19px;
   border-bottom: 1px solid $catalog-color;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog__info {
+      font-size: 15px;
+      line-height: 2;
+      color: #444444;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog__info {
+    line-height: 2;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: auto;
+    border: none;
+  }
+}
