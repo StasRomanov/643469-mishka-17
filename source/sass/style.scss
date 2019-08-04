@@ -2,6 +2,7 @@
 @import "mixin/mixin";
 @import "fonts";
 @import "base";
+@import "blocks/decoration-zigzag/decoration-zigzag";
 @import "blocks/header/index";
 @import "blocks/nav/index";
 @import "blocks/main-index/index";
@@ -18,5 +19,4 @@
 @import "blocks/social/index";
 @import "blocks/dev/index";
 @import "blocks/form/index";
-@import "blocks/decoration-zigzag/decoration-zigzag";
 @import "blocks/logo/index";
