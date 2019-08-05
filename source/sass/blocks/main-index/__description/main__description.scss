@@ -24,3 +24,9 @@
     line-height: 1.76;
   }
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main--form .main__description {
+    margin-bottom: 16px;
+  }
+}

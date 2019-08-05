@@ -12,3 +12,11 @@
 .form__label:active.form__label::after {
   border: solid 2px rgba(68, 68, 68, 0.3);
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__label {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 0.95;
+  }
+}

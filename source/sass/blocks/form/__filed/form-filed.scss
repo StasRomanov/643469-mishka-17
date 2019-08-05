@@ -24,3 +24,15 @@
     content: none;
   }
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed:nth-of-type(2) {
+    padding-left: 163px;
+  }
+}
