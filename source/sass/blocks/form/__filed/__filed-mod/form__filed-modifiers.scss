@@ -34,7 +34,7 @@
 @media (min-width: $tabletWidthCatalog) {
   .form__filed.form__filed--tel {
     padding-top: 60px;
-    padding-right: 20px;
+    padding-right: 50px;
     margin-bottom: 0;
   }
 
@@ -61,12 +61,12 @@
 }
 
 @media (min-width: $desktopWidth) {
-  .form__filed--tel,
+  .form__filed.form__filed--tel,
   .form__filed--email {
     padding-left: 19.5%;
   }
 
-  .form__filed--bonus {
+  .form__filed.form__filed--bonus {
     padding-right: 20%;
   }
 }
