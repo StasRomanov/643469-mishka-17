@@ -22,3 +22,15 @@
     top: 66px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .main__title--form {
+    padding-bottom: 99px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__title {
+    left: 10%;
+  }
+}

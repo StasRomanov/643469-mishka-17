@@ -59,3 +59,14 @@
     padding-top: 50px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .form__filed--tel,
+  .form__filed--email {
+    padding-left: 19.5%;
+  }
+
+  .form__filed--bonus {
+    padding-right: 20%;
+  }
+}

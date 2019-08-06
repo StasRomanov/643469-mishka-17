@@ -19,3 +19,19 @@
     width: fit-content;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .form__list {
+    padding-bottom: 7px;
+  }
+
+  .form__text-list,
+  .form__tel-list,
+  .form__email-list {
+    padding-right: 20%;
+  }
+
+  .form__tel-list {
+    padding-right: 22.6%;
+  }
+}

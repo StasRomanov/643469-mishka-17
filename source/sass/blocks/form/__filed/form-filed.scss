@@ -38,4 +38,10 @@
   }
 }
 
+@media (min-width: $desktopWidth) {
+  .form__filed {
+    padding-left: 19.5%;
+  }
+}
+
 @import "__filed-mod/form__filed-modifiers";

@@ -12,3 +12,9 @@
     margin-bottom: 57px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .form__checkbox-item {
+    min-width: 32.3%;
+  }
+}

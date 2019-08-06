@@ -17,16 +17,18 @@
   }
 }
 
+@media (min-width: $tabletWidthCatalog) {
+  .main--form .main__description {
+    margin-bottom: 16px;
+  }
+}
+
+
 @media (min-width: $desktopWidth) {
   .main--form .main__description {
     font-size: 17px;
     font-weight: normal;
     line-height: 1.76;
-  }
-}
-
-@media (min-width: $tabletWidthCatalog) {
-  .main--form .main__description {
-    margin-bottom: 16px;
+    padding: 105px 19.5% 24px 19.5%;
   }
 }

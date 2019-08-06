@@ -99,3 +99,15 @@
     right: 72px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .form__input-icon,
+  .form__input-icon--email {
+    top: 60%;
+    right: 20.3%;
+  }
+
+  .form__input-icon--email {
+    top: 29%;
+  }
+}

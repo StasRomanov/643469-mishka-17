@@ -11,3 +11,10 @@
     padding-bottom: 9px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .form__checkbox-list {
+    width: auto;
+    padding-right: 34px;
+  }
+}
