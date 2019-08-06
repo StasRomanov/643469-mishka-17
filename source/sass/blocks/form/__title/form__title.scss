@@ -15,6 +15,10 @@
     font-weight: bold;
     position: absolute;
     top: 38px;
-    left: 0;
+    left: 6.7%;
+  }
+
+  .form__filed:nth-of-type(2n) .form__title {
+    top: 66px;
   }
 }

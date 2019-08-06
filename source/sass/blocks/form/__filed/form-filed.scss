@@ -17,8 +17,6 @@
   @include normalForm();
 }
 
-@import "__filed-mod/form__filed-modifiers";
-
 @media (min-width: $tabletWidthCatalog) {
   .form__filed::after {
     content: none;
@@ -27,7 +25,8 @@
 
 @media (min-width: $tabletWidthCatalog) {
   .form__filed {
-    padding-left: 163px;
+    padding-left: 218px;
+    padding-right: 50px;
   }
 }
 
@@ -35,9 +34,8 @@
   .form__filed:nth-of-type(2n) {
     background-color: #f1f1f1;
     padding-top: 30px;
-  }
-
-  .form__filed:nth-of-type(2n) .form__title {
-    top: 66px;
+    margin-bottom: 28px;
   }
 }
+
+@import "__filed-mod/form__filed-modifiers";

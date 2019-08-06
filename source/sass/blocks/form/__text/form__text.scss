@@ -11,3 +11,17 @@
   flex-direction: column;
   margin-bottom: 22px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__text-label {
+    font-size: 19px;
+    line-height: 0.95;
+    margin-right: 28px;
+  }
+
+  .form__text-item {
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+}

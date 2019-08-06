@@ -20,3 +20,9 @@
     line-height: 0.95;
   }
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed:nth-of-type(2n) .form__label {
+    padding-left: 20px;
+  }
+}
