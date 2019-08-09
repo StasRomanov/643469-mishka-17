@@ -42,6 +42,14 @@
   .form__filed {
     padding-left: 19.5%;
   }
+
+  .form__filed-info__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 19.5% 24px;
+  }
 }
 
 @import "__filed-mod/form__filed-modifiers";

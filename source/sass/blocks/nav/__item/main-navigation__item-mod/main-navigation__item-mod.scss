@@ -6,12 +6,11 @@
   height: 18px;
   background-repeat: no-repeat;
   opacity: 0.2;
-  left: 31px;
+  left: 11%;
 }
 
 .main-navigation__item--search::after {
   background-image: url("../img/search-svg.svg");
-  left: 40%;
 }
 
 .main-navigation__item--basket::after {
@@ -47,6 +46,10 @@
 
   .main-navigation__item--basket::after {
     left: -59px;
+  }
+
+  .main-navigation__item--search::after {
+    left: 40%;
   }
 }
 

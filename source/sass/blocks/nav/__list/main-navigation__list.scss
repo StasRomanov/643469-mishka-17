@@ -2,6 +2,29 @@
   @include normalList();
 }
 
+@media (max-width: $tabletWidthCatalog) {
+  @keyframes menuOpen {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .main-navigation__list-animation {
+    animation-name: menuOpen;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+
+  .main-navigation__list {
+    background-color: #ffffff;
+  }
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .main-navigation__list {
     display: flex;

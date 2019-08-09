@@ -5,6 +5,7 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"/>
 </head>
 <body>
 <header class="main-header">
@@ -135,8 +136,10 @@
         <textarea class="form__input-feedback" placeholder="Опишите все ваши пожелания к заказу" id="feedback" name="Feedback"></textarea>
       </fieldset>
       <fieldset class="form__filed-info">
-        <legend class="form__info-text">*Поля обязательны для заполнения</legend>
-        <button class="form__submit-button">Отправить заказ</button>
+        <div class="form__filed-info__text-wrapper">
+          <span class="form__info-text">*Поля обязательны для заполнения</span>
+          <button class="form__submit-button">Отправить заказ</button>
+        </div>
       </fieldset>
     </form>
   </main>
