@@ -28,6 +28,14 @@
     padding-left: 218px;
     padding-right: 50px;
   }
+
+  .form__filed-info__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 6.5% 24px;
+  }
 }
 
 @media (min-width: $tabletWidthCatalog) {

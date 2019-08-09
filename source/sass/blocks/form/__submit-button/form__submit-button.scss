@@ -8,6 +8,12 @@
   letter-spacing: normal;
 }
 
+@media (min-width: 768px) {
+  .form__submit-button {
+    width: 34.5%;
+  }
+}
+
 @media (min-width: $desktopWidth) {
   .form__submit-button {
     width: 33%;
