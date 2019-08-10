@@ -2,7 +2,13 @@
   @include normalList();
 }
 
-@media (max-width: $tabletWidthCatalog) {
+@media (max-width: $mobileWidth) {
+  .main-navigation__list {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: $mobileWidth) {
   @keyframes menuOpen {
     from {
       opacity: 0;
@@ -18,10 +24,6 @@
     animation-duration: 0.4s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  }
-
-  .main-navigation__list {
-    background-color: #ffffff;
   }
 }
 

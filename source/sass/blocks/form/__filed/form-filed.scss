@@ -3,16 +3,6 @@
   position: relative;
 }
 
-.form__filed::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 62px);
-  height: 1px;
-  background-color: $main-color;
-  top: 7px;
-  right: 0;
-}
-
 .form__filed-info {
   @include normalForm();
 }

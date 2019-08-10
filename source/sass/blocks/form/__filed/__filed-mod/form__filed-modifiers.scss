@@ -9,16 +9,6 @@
   position: relative;
 }
 
-.form__filed--email::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 81px);
-  height: 1px;
-  background-color: $main-color;
-  top: 7px;
-  right: 0;
-}
-
 .form__title--bonus {
   margin-bottom: 23px;
 }
@@ -29,9 +19,10 @@
 
 @media (min-width: $tabletWidthCatalog) {
   .form__filed.form__filed--tel {
-    padding-top: 60px;
+    padding-top: 65px;
     padding-right: 50px;
     margin-bottom: 0;
+    padding-bottom: 5px;
   }
 
   .form__filed--email {
@@ -46,10 +37,6 @@
     padding: 33px 50px 50px 218px;
   }
 
-  .form__filed--email::after {
-    display: none;
-  }
-
   .form__filed.form__filed--bonus {
     background-color: #ffffff;
     padding-top: 50px;
@@ -60,6 +47,7 @@
   .form__filed.form__filed--tel,
   .form__filed--email {
     padding-left: 19.5%;
+    padding-right: 19.5%;
   }
 
   .form__filed.form__filed--bonus {

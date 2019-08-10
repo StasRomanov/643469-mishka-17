@@ -4,6 +4,24 @@
   line-height: 0.94;
   font-size: 17px;
   text-transform: uppercase;
+  margin-right: 26px;
+}
+
+.form__one-word {
+  white-space: nowrap;
+}
+
+.form__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__title-line {
+  display: inline-block;
+  background-color: #63d1bb;
+  width: 76%;
+  height: 1px;
+  margin: auto 0 auto auto;
 }
 
 @import "__title-mod/form__title-modifiers";
@@ -16,6 +34,11 @@
     position: absolute;
     top: 38px;
     left: 6.7%;
+    margin-right: 0;
+  }
+
+  .form__title-line {
+    display: none;
   }
 
   .form__filed:nth-of-type(2n) .form__title {

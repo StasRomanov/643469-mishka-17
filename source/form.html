@@ -49,7 +49,10 @@
     </p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post" name="all-info">
       <fieldset class="form__filed">
-        <legend class="form__title">Тип</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">Тип</span>
+          <span class="form__title-line"></span>
+        </div>
         <ul class="form__radio-list form__list">
           <li class="form__radio-item form__item">
             <input class="form__radio form__input" type="radio" name="radio" value="Accessory for the interior" id="accessory" checked>
@@ -62,7 +65,10 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__title">Цвет</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">Цвет</span>
+          <span class="form__title-line"></span>
+        </div>
         <ul class="form__checkbox-list form__list">
           <li class="form__checkbox-item form__item">
             <input class="form__checkbox form__input" type="checkbox" name="checkbox-1" value="White" id="white" checked>
@@ -91,7 +97,10 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__title">ФИО</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">ФИО</span>
+          <span class="form__title-line"></span>
+        </div>
         <ul class="form__text-list">
           <li class="form__text-item">
             <label class="form__text-label" for="name">Имя:</label>
@@ -108,31 +117,30 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed form__filed--tel">
-        <legend class="form__title">тел</legend>
-        <ul class="form__tel-list">
-          <li class="form__tel-item">
-            <!--иконка будет реализована как псевдоэлемент-->
-            <input class="form__input-tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" required>
-            <svg width="25" height="24" class="form__input-icon form__input-icon--tel">
-              <use xlink:href="./img/svg/sprite.svg#tel"></use>
-            </svg>
-          </li>
-        </ul>
+        <div class="form__title-wrapper">
+          <span class="form__title">тел</span>
+          <span class="form__title-line"></span>
+        </div>
+          <input class="form__input-tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" required>
+          <svg width="25" height="24" class="form__input-icon form__input-icon--tel">
+            <use xlink:href="./img/svg/sprite.svg#tel"></use>
+          </svg>
       </fieldset>
       <fieldset class="form__filed form__filed--email">
-        <legend class="form__title">E-mail</legend>
-        <ul class="form__email-list">
-          <li class="form__email-item">
-            <!--иконка будет реализована как псевдоэлемент-->
-            <input class="form__input-email" type="text" placeholder="Ваш Email*" id="e-mail" name="E-mail" required>
-            <svg width="32" height="21" class="form__input-icon form__input-icon--email">
-              <use xlink:href="./img/svg/sprite.svg#email"></use>
-            </svg>
-          </li>
-        </ul>
+        <div class="form__title-wrapper">
+          <span class="form__title"><span class="form__one-word">E-mail</span></span>
+          <span class="form__title-line"></span>
+          </div>
+          <input class="form__input-email" type="text" placeholder="Ваш Email*" id="e-mail" name="E-mail" required>
+          <svg width="32" height="21" class="form__input-icon form__input-icon--email">
+            <use xlink:href="./img/svg/sprite.svg#email"></use>
+          </svg>
       </fieldset>
       <fieldset class="form__filed form__filed--bonus">
-        <legend class="form__title form__title--bonus">Доп</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">Доп</span>
+          <span class="form__title-line"></span>
+        </div>
         <textarea class="form__input-feedback" placeholder="Опишите все ваши пожелания к заказу" id="feedback" name="Feedback"></textarea>
       </fieldset>
       <fieldset class="form__filed-info">

@@ -46,9 +46,10 @@
   font-size: 17px;
   color: #444444;
   font-weight: normal;
-  max-width: calc(100% - 30px);
-  min-height: 114px;
-  width: calc(100% - 30px);
+  min-height: 144px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 27px;
 }
 
 .form__input-feedback:hover,
@@ -95,7 +96,7 @@
   }
 
   .form__input-icon--email {
-    top: 29%;
+    top: 25%;
     right: 72px;
   }
 }
