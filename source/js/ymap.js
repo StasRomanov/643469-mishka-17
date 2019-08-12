@@ -1,3 +1,4 @@
+"use strict";
 ymaps.ready(function(){
   // Указывается идентификатор HTML-элемента.
   var moscow_map = new ymaps.Map("first_map", {
