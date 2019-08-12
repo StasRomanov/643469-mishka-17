@@ -14,14 +14,21 @@
 .form__title-wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
-.form__title-line {
-  display: inline-block;
+.form__title-wrapper::after {
+  @include normalPseudo();
   background-color: #63d1bb;
   width: 76%;
   height: 1px;
-  margin: auto 0 auto auto;
+  border: none;
+  top: 54%;
+  right: 0;
+}
+
+.form__title--bonus {
+  margin-bottom: 23px;
 }
 
 @import "__title-mod/form__title-modifiers";
