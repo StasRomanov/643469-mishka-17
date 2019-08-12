@@ -21,6 +21,11 @@
   color: #444444;
 }
 
+.form__input-tel,
+.form__input-email {
+  margin-top: 10px;
+}
+
 .form__input-text::placeholder,
 .form__input-tel::placeholder,
 .form__input-email::placeholder {
