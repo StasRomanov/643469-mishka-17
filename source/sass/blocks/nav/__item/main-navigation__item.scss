@@ -19,6 +19,10 @@
   .main-navigation__item {
     justify-content: center;
     align-items: stretch;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .main-navigation__list:first-of-type .main-navigation__item:first-child {
     border-top: 1px solid #ececec;
   }
 }
