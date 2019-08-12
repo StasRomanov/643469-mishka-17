@@ -24,6 +24,14 @@
   opacity: 0.3;
 }
 
+@import "product-type__item-modifiers/product-type-modifiers";
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-type__item {
+    background-position: 87.5% 52%
+  }
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .product-type__item {
     width: 50%;
@@ -35,13 +43,5 @@
 @media (min-width: $desktopWidth) {
   .product-type__item {
     background-position: 92% center;
-  }
-}
-
-@import "product-type__item-modifiers/product-type-modifiers";
-
-@media (min-width: $tabletWidthCatalog) {
-  .product-type__item {
-    background-position: 92.5% 55%;
   }
 }

@@ -3,6 +3,13 @@
   position: relative;
 }
 
+@media (max-width: $mobileWidth) {
+  .product-week {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .product-week {
     padding: 43px 51px 54px 48px;

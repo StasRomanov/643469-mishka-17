@@ -1,3 +1,9 @@
+@media (max-width: $mobileWidth) {
+  .product-week__info-wrapper {
+    order: 2;
+  }
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .product-week__info-wrapper {
     max-width: 292px;
