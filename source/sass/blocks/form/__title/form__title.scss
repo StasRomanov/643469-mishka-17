@@ -51,6 +51,14 @@
   .form__filed:nth-of-type(2n) .form__title {
     top: 66px;
   }
+
+  .form__title-wrapper {
+    position: static;
+  }
+
+  .form__title-wrapper::after {
+    content: none;
+  }
 }
 
 @media (min-width: $desktopWidth) {

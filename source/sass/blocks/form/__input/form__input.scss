@@ -92,6 +92,10 @@
     padding-left: 15px;
     background-color: transparent;
   }
+
+  .form__input-feedback {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $tabletWidthCatalog) {

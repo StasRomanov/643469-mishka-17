@@ -8,6 +8,11 @@
   letter-spacing: 0.4px;
 }
 
+.main--form .main__description {
+  line-height: 1.9;
+  padding: 20px 30px 20px 30px;
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .main__description {
     font-size: 17px;
@@ -20,6 +25,8 @@
 @media (min-width: $tabletWidthCatalog) {
   .main--form .main__description {
     margin-bottom: 16px;
+    padding: 45px 49px 17px 51px;
+    letter-spacing: 0.1px;
   }
 }
 

@@ -11,7 +11,11 @@
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-navigation__logo-link" href="./index.html">
-      <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+      </picture>
     </a>
     <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
     <ul class="main-navigation__list">
