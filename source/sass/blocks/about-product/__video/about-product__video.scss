@@ -1,6 +1,6 @@
 .about-product__video-container {
   height: 150px;
-  background-image: url("../../../../img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@
     order: -1;
     width: 100%;
     height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
   }
 }
 
@@ -32,5 +33,6 @@
     width: 65%;
     height: 100%;
     object-fit: contain;
+    background-image: url("../img/video-desktop@1x.jpg");
   }
 }

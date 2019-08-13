@@ -2,6 +2,9 @@
   width: 100%;
 }
 
+.catalog__picture-wrapper {
+  display: flex;
+}
 
 @media (min-width: $tabletWidthCatalog) {
   @media (max-width: $desktopWidth - 1px) {
