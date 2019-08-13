@@ -5,6 +5,10 @@
   font-size: 17px;
   text-transform: uppercase;
   margin-right: 26px;
+  position: relative;
+  z-index: 5;
+  min-width: 24%;
+  background-color: #ffffff;
 }
 
 .form__one-word {
@@ -20,7 +24,7 @@
 .form__title-wrapper::after {
   @include normalPseudo();
   background-color: #63d1bb;
-  width: 76%;
+  width: 100%;
   height: 1px;
   border: none;
   top: 54%;
