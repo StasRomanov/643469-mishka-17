@@ -9,3 +9,19 @@
 .about-product__item:active {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-product__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about-product__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

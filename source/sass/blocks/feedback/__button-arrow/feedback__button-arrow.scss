@@ -22,3 +22,17 @@
 .feedback__button-arrow:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .feedback__button {
+    order: 4;
+    width: 179px;
+    margin-left: auto;
+    margin-top: -83px;
+    margin-right: 5px;
+  }
+
+  .feedback__button-arrow {
+    border: none;
+  }
+}

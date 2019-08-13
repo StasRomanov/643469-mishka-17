@@ -1,0 +1,12 @@
+.map__icon {
+  position: absolute;
+  top: 145px;
+  right: 116px;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .map__icon {
+    top: 138px;
+    right: 41%;
+  }
+}

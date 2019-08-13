@@ -5,3 +5,11 @@
   background-color: $main-color;
   color: #ffffff;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-type__list {
+    display: flex;
+    padding: 0 51px 0 51px;
+    background-color: transparent;
+  }
+}

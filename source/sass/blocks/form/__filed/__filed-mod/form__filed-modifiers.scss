@@ -1,32 +1,52 @@
 .form__filed--tel {
-  margin-bottom: 37px;
+  margin-bottom: 30px;
   margin-top: 3px;
 }
 
 .form__filed--email {
   @include normlFieldset();
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   position: relative;
 }
 
-.form__filed--email::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 81px);
-  height: 1px;
-  background-color: $main-color;
-  top: 7px;
-  right: 0;
-}
-
-.form__title--bonus {
-  margin-bottom: 23px;
-}
-
-.form__filed--bonus::after {
-  display: none;
-}
-
 .form__filed--bonus {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed.form__filed--tel {
+    padding-top: 56px;
+    padding-right: 50px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+
+  .form__filed--email {
+    @include normalList();
+    background-color: #f1f1f1;
+    border: none;
+    color: #000000;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    padding: 24px 50px 50px 218px;
+  }
+
+  .form__filed.form__filed--bonus {
+    background-color: #ffffff;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__filed.form__filed--tel,
+  .form__filed--email {
+    padding-left: 19.5%;
+    padding-right: 19.5%;
+  }
+
+  .form__filed.form__filed--bonus {
+    padding-right: 20%;
+  }
 }

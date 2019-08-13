@@ -2,3 +2,9 @@
   @include normalList();
   margin-bottom: 29px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .feedback__list {
+    order: 3;
+  }
+}

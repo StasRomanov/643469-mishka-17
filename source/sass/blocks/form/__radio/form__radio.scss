@@ -20,3 +20,19 @@
   background-color: #62d1ba;
   z-index: 2;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__radio:checked ~ .form__label::before {
+    width: 19px;
+    height: 19px;
+    left: -66px;
+    top: 4px;
+  }
+
+  .form__radio-label::after {
+    width: 50px;
+    height: 50px;
+    left: -84px;
+    top: -13px;
+  }
+}

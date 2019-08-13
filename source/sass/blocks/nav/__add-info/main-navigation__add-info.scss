@@ -1,0 +1,26 @@
+.main-navigation__add-info {
+  display: none;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__add-info {
+    display: block;
+    order: 3;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 17px 0 0 0;
+    color: #444444;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__add-info {
+    display: block;
+    order: 5;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 16px 0 0 36px;
+  }
+}

@@ -1,0 +1,26 @@
+.map {
+  height: 457px;
+  width: 100%;
+  background-image: url("../img/map-mobile@1x.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(241, 130, 58, 0.6);
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .map {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .map {
+    position: absolute;
+    width: 525px;
+    height: 457px;
+    object-fit: contain;
+    right: 27px;
+    top: 70px;
+  }
+}

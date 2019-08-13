@@ -2,3 +2,12 @@
   @include normalList();
   margin-bottom: 37px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts__list {
+    display: flex;
+    padding-left: 5px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}

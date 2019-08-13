@@ -6,3 +6,20 @@
   font-weight: normal;
   margin-bottom: 17px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__text {
+    line-height: 1.76;
+    font-size: 17px;
+    font-weight: normal;
+    max-width: 295px;
+    letter-spacing: 0.4px;
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week__text {
+    margin-bottom: 47px;
+  }
+}

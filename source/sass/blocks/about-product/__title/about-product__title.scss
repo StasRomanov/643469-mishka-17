@@ -17,3 +17,35 @@
   top: 29px;
   left: 33px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-product__title {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 37px 20px 6px 107px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-product__title::after {
+    top: 31px;
+    left: 42px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about-product__title {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 95px 69px 6px 42px;
+    max-width: 220px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about-product__title::after {
+    top: 41px;
+    left: 44px;
+  }
+}

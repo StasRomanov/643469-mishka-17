@@ -1,0 +1,8 @@
+.popup__description {
+  @include normalText();
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: center;
+  color: #444444;
+}

@@ -5,14 +5,19 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"/>
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header__logo-link" href="./index.html">
-    <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
-  </a>
-  <a class="main-header__menu-opener main-header__menu-opener--open" href="#"></a>
   <nav class="main-navigation">
+    <a class="main-navigation__logo-link" href="./index.html">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+      </picture>
+    </a>
+    <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
     <ul class="main-navigation__list">
       <li class="main-navigation__item">
         <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
@@ -20,6 +25,16 @@
       <li class="main-navigation__item">
         <a href="#" class="main-navigation__link">Вязание на заказ</a>
       </li>
+    </ul>
+    <ul class="main-navigation__list main-navigation__list--desktop">
+      <li class="main-navigation__item">
+        <a href="./form.html" class="main-navigation__link">Новые поступления</a>
+      </li>
+      <li class="main-navigation__item">
+        <a href="./form.html" class="main-navigation__link">Распродажа</a>
+      </li>
+    </ul>
+    <ul class="main-navigation__list main-navigation__list--user-info">
       <li class="main-navigation__item main-navigation__item--search">
         <a href="#" class="main-navigation__link">Поиск по сайту</a>
       </li>
@@ -27,6 +42,7 @@
         <a href="#" class="main-navigation__link">Корзина: пока пуста</a>
       </li>
     </ul>
+    <div class="main-navigation__add-info">Бесплатная доставка по России</div>
   </nav>
 </header>
   <main class="main main--form">
@@ -37,7 +53,9 @@
     </p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post" name="all-info">
       <fieldset class="form__filed">
-        <legend class="form__title">Тип</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">Тип</span>
+        </div>
         <ul class="form__radio-list form__list">
           <li class="form__radio-item form__item">
             <input class="form__radio form__input" type="radio" name="radio" value="Accessory for the interior" id="accessory" checked>
@@ -50,7 +68,9 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__title">Цвет</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">Цвет</span>
+        </div>
         <ul class="form__checkbox-list form__list">
           <li class="form__checkbox-item form__item">
             <input class="form__checkbox form__input" type="checkbox" name="checkbox-1" value="White" id="white" checked>
@@ -79,7 +99,9 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed">
-        <legend class="form__title">ФИО</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">ФИО</span>
+        </div>
         <ul class="form__text-list">
           <li class="form__text-item">
             <label class="form__text-label" for="name">Имя:</label>
@@ -96,40 +118,41 @@
         </ul>
       </fieldset>
       <fieldset class="form__filed form__filed--tel">
-        <legend class="form__title">тел</legend>
-        <ul class="form__tel-list">
-          <li class="form__tel-item">
-            <!--иконка будет реализована как псевдоэлемент-->
-            <input class="form__input-tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" required>
-            <svg width="25" height="24" class="form__input-icon form__input-icon--tel">
-              <use xlink:href="./img/svg/sprite.svg#tel"></use>
-            </svg>
-          </li>
-        </ul>
+        <div class="form__title-wrapper">
+          <span class="form__title">тел</span>
+        </div>
+          <input class="form__input-tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" required>
+          <svg width="25" height="24" class="form__input-icon form__input-icon--tel">
+            <use xlink:href="./img/svg/sprite.svg#tel"></use>
+          </svg>
       </fieldset>
-      <fieldset class="form__filed--email">
-        <legend class="form__title">E-mail</legend>
-        <ul class="form__email-list">
-          <li class="form__email-item">
-            <!--иконка будет реализована как псевдоэлемент-->
-            <input class="form__input-email" type="text" placeholder="Ваш Email*" id="e-mail" name="E-mail" required>
-            <svg width="32" height="21" class="form__input-icon form__input-icon--email">
-              <use xlink:href="./img/svg/sprite.svg#email"></use>
-            </svg>
-          </li>
-        </ul>
+      <fieldset class="form__filed form__filed--email">
+        <div class="form__title-wrapper">
+          <span class="form__title">E-mail</span>
+          </div>
+          <input class="form__input-email" type="text" placeholder="Ваш Email*" id="e-mail" name="E-mail" required>
+          <svg width="32" height="21" class="form__input-icon form__input-icon--email">
+            <use xlink:href="./img/svg/sprite.svg#email"></use>
+          </svg>
       </fieldset>
       <fieldset class="form__filed form__filed--bonus">
-        <legend class="form__title form__title--bonus">Доп</legend>
+        <div class="form__title-wrapper">
+          <span class="form__title">Доп</span>
+        </div>
         <textarea class="form__input-feedback" placeholder="Опишите все ваши пожелания к заказу" id="feedback" name="Feedback"></textarea>
       </fieldset>
       <fieldset class="form__filed-info">
-        <legend class="form__info-text">*Поля обязательны для заполнения</legend>
-        <button class="form__submit-button">Отправить заказ</button>
+        <div class="form__filed-info__text-wrapper">
+          <span class="form__info-text">*Поля обязательны для заполнения</span>
+          <button class="form__submit-button">Отправить заказ</button>
+        </div>
       </fieldset>
     </form>
   </main>
   <footer class="main-footer">
+    <section class="logo">
+      <img src="img/logo-footer.svg" width="102" height="34" class="logo__picture" alt="mishka">
+    </section>
     <section class="social">
       <h3 class="visually-hidden">пишите нам в соцсетях</h3>
       <ul class="social__list">

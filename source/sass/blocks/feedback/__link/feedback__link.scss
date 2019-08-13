@@ -2,3 +2,19 @@
   @include normalButton();
   margin-bottom: 36px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .feedback__link {
+    order: 1;
+    margin-left: auto;
+    margin-right: 5px;
+    min-width: 172px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .feedback__link {
+    margin-top: 7px;
+    margin-right: 7px;
+  }
+}

@@ -1,0 +1,26 @@
+.catalog__picture {
+  width: 100%;
+}
+
+.catalog__picture-wrapper {
+  display: flex;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog__picture {
+      height: 334px;
+      object-fit: contain;
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog__picture {
+    width: 316px;
+    height: 462px;
+    object-fit: contain;
+    background-color: #f1f1f1;
+  }
+}

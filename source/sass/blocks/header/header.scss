@@ -1,9 +1,30 @@
-.main-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-  flex-wrap: wrap;
-  position: relative;
-  padding: 19px 31px;
+.main-header * {
+  box-sizing: border-box;
+}
+
+@media (max-width: $mobileWidth) {
+  .main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 81px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-header {
+    padding: 0 50px;
+    margin-bottom: -61px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-header {
+    padding: 0 50px;
+    margin-bottom: -80px;
+  }
 }

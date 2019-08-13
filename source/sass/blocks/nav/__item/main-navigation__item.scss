@@ -1,8 +1,7 @@
 .main-navigation__item {
   min-height: 79px;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   width: 100%;
@@ -16,4 +15,32 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-@import "main-navigation__item-mod/main-navigation__item-mod";
+@media (max-width: $mobileWidth) {
+  .main-navigation__item {
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .main-navigation__list:first-of-type .main-navigation__item:first-child {
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__item {
+    width: 45.7%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__list:first-of-type .main-navigation__item:first-child {
+    border-right: 1px solid #ececec;
+  }
+}

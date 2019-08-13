@@ -1,3 +1,58 @@
 .main-navigation__list {
   @include normalList();
 }
+
+@media (max-width: $mobileWidth) {
+  .main-navigation__list {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: $mobileWidth) {
+  @keyframes menuOpen {
+    from {
+      opacity: 0;
+      transform: translateY(-500px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .main-navigation__list-animation {
+    animation-name: menuOpen;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    order: 2;
+    width: 50%;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-navigation__list:first-of-type .main-navigation__item {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__list {
+    justify-content: space-between;
+    order: 1;
+    width: 38.7%;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@import "__list-mod/main-navigation__list-mod";

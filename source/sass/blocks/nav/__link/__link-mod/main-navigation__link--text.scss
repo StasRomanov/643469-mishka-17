@@ -1,0 +1,10 @@
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__link--text {
+    @include normalText();
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: #444444;
+    letter-spacing: 0.3px;
+  }
+}

@@ -4,3 +4,40 @@
   font-size: 18px;
   margin-bottom: 20px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts__title {
+    line-height: 1.16;
+    font-size: 43px;
+    letter-spacing: 2px;
+    margin-bottom: 43px;
+    position: relative;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .contacts__title::after {
+    @include normalPseudo();
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    top: -18px;
+    right: -33px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
+  @media (min-width: $desktopWidth) {
+    .contacts__title::after {
+      top: -7px;
+      left: -109px;
+    }
+  }
+}

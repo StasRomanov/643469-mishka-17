@@ -1,0 +1,19 @@
+@media (max-width: $mobileWidth) {
+  .product-week__info-wrapper {
+    order: 2;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__info-wrapper {
+    max-width: 292px;
+    order: 3;
+    min-width: 293px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week__info-wrapper {
+    margin: 0 0 0 142px;
+  }
+}

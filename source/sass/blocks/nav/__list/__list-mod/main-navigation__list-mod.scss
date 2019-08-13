@@ -1,0 +1,39 @@
+@media (min-width: $desktopWidth) {
+  .main-navigation__list--desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    order: 4;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.main-navigation__list--desktop {
+  display: none;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__list--user-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    order: 1;
+    width: 52.1%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__list--user-info {
+    order: 3;
+    width: 38.7%;
+  }
+
+  .main-navigation__list--desktop .main-navigation__item {
+    align-items: flex-start;
+  }
+
+  .main-navigation__list--desktop {
+    display: flex;
+  }
+}

@@ -1,9 +1,41 @@
 .main__description {
   @include normalText();
-  line-height: 1.85;
+  line-height: 1.8;
   padding: 24px 30px 20px 30px;
   font-size: 13px;
   font-weight: normal;
   color: $main-text-color;
   letter-spacing: 0.4px;
+}
+
+.main--form .main__description {
+  line-height: 1.9;
+  padding: 20px 30px 20px 30px;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main__description {
+    font-size: 17px;
+    line-height: 1.76;
+    padding: 49px 76px 20px 53px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main--form .main__description {
+    margin-bottom: 16px;
+    padding: 45px 49px 17px 51px;
+    letter-spacing: 0.1px;
+  }
+}
+
+
+@media (min-width: $desktopWidth) {
+  .main--form .main__description {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.76;
+    padding: 105px 19.5% 24px 19.5%;
+  }
 }

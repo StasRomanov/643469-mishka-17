@@ -1,3 +1,16 @@
 .write-us {
   padding: 39px 30px 38px 30px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .write-us {
+    padding: 56px 271px 38px 269px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .write-us {
+    padding: 0;
+    width: 26.3%;
+  }
+}

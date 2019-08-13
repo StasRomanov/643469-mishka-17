@@ -1,3 +1,13 @@
 .main-navigation--close {
   display: none;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation--close {
+    display: flex;
+  }
+
+  .main-navigation__menu-opener {
+    display: none;
+  }
+}

@@ -4,3 +4,9 @@
   align-items: center;
   padding: 22px 39px 30px 38px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .developer {
+    padding: 0;
+  }
+}

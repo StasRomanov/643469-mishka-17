@@ -11,3 +11,19 @@
 .catalog__item:active .catalog__text-container {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog__item {
+      flex-direction: row;
+      margin-bottom: 54px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog__item {
+    max-width: 316px;
+    margin-bottom: 57px;
+  }
+}

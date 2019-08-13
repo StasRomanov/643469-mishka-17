@@ -5,37 +5,60 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
 </head>
 <body>
-<header class="main-header">
-  <a class="main-header__logo-link" href="./index.html">
-    <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
-  </a>
-  <a class="main-header__menu-opener main-header__menu-opener--open" href="#"></a>
-  <nav class="main-navigation">
-    <ul class="main-navigation__list">
-      <li class="main-navigation__item">
-        <a href="#" class="main-navigation__link">Каталог товаров</a>
-      </li>
-      <li class="main-navigation__item">
-        <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
-      </li>
-      <li class="main-navigation__item main-navigation__item--search">
-        <a href="#" class="main-navigation__link">Поиск по сайту</a>
-      </li>
-      <li class="main-navigation__item main-navigation__item--basket">
-        <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-navigation__logo-link" href="./index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+        </picture>
+      </a>
+      <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Каталог товаров</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list main-navigation__list--desktop">
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Новые поступления</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list main-navigation__list--user-info">
+        <li class="main-navigation__item main-navigation__item--search">
+          <a href="#" class="main-navigation__link">Поиск по сайту</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--basket">
+          <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <div class="main-navigation__add-info">Бесплатная доставка по России</div>
+    </nav>
+  </header>
   <main class="main-catalog">
     <h1 class="main-catalog__title">Каталог товаров</h1>
+    <svg width="769" height="23" class="zigzag-line" fill="#ffffff">
+      <use xlink:href="./img/svg/sprite.svg#zigzag"></use>
+    </svg>
     <section class="catalog">
       <h2 class="visually-hidden">наши лучшие товары!</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img src="./img/photo-1-mobile.png" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
+          <picture class="catalog__picture-wrapper">
+            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-mobile@1x.jpg 1x">
+            <img src="./img/photo-hare-mobile@1x.jpg" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
+          </picture>
           <div class="catalog__text-container">
             <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
             <p class="catalog__info">Рост 30 см, вес 200 г</p>
@@ -48,23 +71,31 @@
           </div>
         </li>
         <li class="catalog__item">
-          <img src="./img/photo-2-mobile.png" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
+          <picture class="catalog__picture-wrapper">
+            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-hare-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@1x.jpg 1x">
+            <img src="./img/photo-bowl-mobile@1x.jpg" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
+          </picture>
           <div class="catalog__text-container">
             <h3 class="catalog__title">Корзинка для белья</h3>
             <p class="catalog__info">Диаметр 15 см, высота 10 см</p>
             <a class="catalog__link" href="#">
-            <p class="catalog__price">690 руб.</p>
+              <p class="catalog__price">690 руб.</p>
               <img src="./img/cart-svg.svg" class="catalog__icon" width="20" height="19" alt="купить товар">
             </a>
           </div>
         </li>
         <li class="catalog__item">
-          <img src="./img/photo-3-mobile.png" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
+          <picture class="catalog__picture-wrapper">
+            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@1x.jpg 1x">
+            <img src="./img/photo-toys-mobile@1x.jpg" class="catalog__picture" width="260" height="195" alt="заяц из ткани синий">
+          </picture>
           <div class="catalog__text-container">
             <h3 class="catalog__title">Большая корзинка для игрушек</h3>
             <p class="catalog__info">Диаметр 30 см, высота 30 см</p>
             <a class="catalog__link" href="#">
-            <p class="catalog__price">1 500 руб.</p>
+              <p class="catalog__price">1 500 руб.</p>
               <img src="./img/cart-svg.svg" class="catalog__icon" width="20" height="19" alt="купить товар">
             </a>
           </div>
@@ -90,6 +121,9 @@
     </section>
   </main>
   <footer class="main-footer">
+    <section class="logo">
+      <img src="img/logo-footer.svg" width="102" height="34" class="logo__picture" alt="mishka">
+    </section>
     <section class="social">
       <h3 class="visually-hidden">пишите нам в соцсетях</h3>
       <ul class="social__list">

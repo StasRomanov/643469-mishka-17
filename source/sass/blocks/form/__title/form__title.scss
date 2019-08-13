@@ -4,6 +4,71 @@
   line-height: 0.94;
   font-size: 17px;
   text-transform: uppercase;
+  margin-right: 26px;
+}
+
+.form__one-word {
+  white-space: nowrap;
+}
+
+.form__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.form__title-wrapper::after {
+  @include normalPseudo();
+  background-color: #63d1bb;
+  width: 76%;
+  height: 1px;
+  border: none;
+  top: 54%;
+  right: 0;
+}
+
+.form__title--bonus {
+  margin-bottom: 23px;
 }
 
 @import "__title-mod/form__title-modifiers";
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__title {
+    line-height: 0.94;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    top: 38px;
+    left: 6.7%;
+    margin-right: 0;
+  }
+
+  .form__title-line {
+    display: none;
+  }
+
+  .form__filed:nth-of-type(2n) .form__title {
+    top: 66px;
+  }
+
+  .form__title-wrapper {
+    position: static;
+  }
+
+  .form__title-wrapper::after {
+    content: none;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main__title--form {
+    padding-bottom: 99px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__title {
+    left: 10%;
+  }
+}

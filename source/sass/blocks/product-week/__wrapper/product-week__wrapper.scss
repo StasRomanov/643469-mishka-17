@@ -1,0 +1,19 @@
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 12px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week__wrapper {
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 50px;
+  }
+}

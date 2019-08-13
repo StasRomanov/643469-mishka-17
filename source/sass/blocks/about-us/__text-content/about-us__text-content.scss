@@ -3,3 +3,77 @@
   line-height: 1.33;
   letter-spacing: 1.4px;
 }
+
+.about-us__item .about-us__text-content::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  bottom: 64px;
+  left: 0;
+}
+
+.about-us__item--flower .about-us__text-content::after {
+  background-image: url("../img/icon-1-svg.svg");
+  width: 32px;
+  height: 37px;
+  bottom: 57px;
+  left: 7px;
+}
+
+.about-us__item--style .about-us__text-content::after {
+  background-image: url("../img/icon-3-svg.svg");
+  width: 47px;
+  height: 27px;
+}
+
+.about-us__item--like .about-us__text-content::after {
+  background-image: url("../img/icon-5-svg.svg");
+  width: 34px;
+  height: 28px;
+  bottom: 61px;
+  left: 8px;
+}
+
+.about-us__item--handmade .about-us__text-content::after {
+  background-image: url("../img/icon-2-svg.svg");
+  width: 35px;
+  height: 35px;
+  bottom: 55px;
+  left: 3px;
+}
+
+.about-us__item--rocket .about-us__text-content::after {
+  background-image: url("../img/icon-4-svg.svg");
+  width: 55px;
+  height: 23px;
+  bottom: 66px;
+  left: -6px;
+}
+
+.about-us__item--bonus .about-us__text-content::after {
+  background-image: url("../img/icon-6-svg.svg");
+  width: 33px;
+  height: 33px;
+  bottom: 59px;
+  left: 3px;
+}
+
+@media (max-width: $mobileWidth) {
+  .about-us__text-content {
+    max-width: 239px;
+  }
+
+  .about-us__item--flower .about-us__text-content,
+  .about-us__item--like .about-us__text-content {
+    max-width: 190px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-us__text-content {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}

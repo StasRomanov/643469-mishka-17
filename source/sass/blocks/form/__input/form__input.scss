@@ -21,6 +21,11 @@
   color: #444444;
 }
 
+.form__input-tel,
+.form__input-email {
+  margin-top: 10px;
+}
+
 .form__input-text::placeholder,
 .form__input-tel::placeholder,
 .form__input-email::placeholder {
@@ -46,9 +51,10 @@
   font-size: 17px;
   color: #444444;
   font-weight: normal;
-  max-width: calc(100% - 30px);
-  min-height: 114px;
-  width: calc(100% - 30px);
+  min-height: 140px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 27px;
 }
 
 .form__input-feedback:hover,
@@ -72,3 +78,46 @@
 }
 
 @import "__input-mod/form__input-modifiers";
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__input-text,
+  .form__input-tel,
+  .form__input-email {
+    height: 37px;
+    box-sizing: border-box;
+    padding-bottom: 18px;
+    line-height: 0.95;
+    font-size: 19px;
+    font-weight: normal;
+    padding-left: 15px;
+    background-color: transparent;
+  }
+
+  .form__input-feedback {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__input-icon {
+    top: 60%;
+    right: 75px;
+  }
+
+  .form__input-icon--email {
+    top: 25%;
+    right: 72px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__input-icon,
+  .form__input-icon--email {
+    top: 60%;
+    right: 20.3%;
+  }
+
+  .form__input-icon--email {
+    top: 29%;
+  }
+}

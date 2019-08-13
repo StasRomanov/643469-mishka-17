@@ -1,0 +1,15 @@
+.popup__wrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+@import "popup__wrapper-mod/popup__wrapper-mod";

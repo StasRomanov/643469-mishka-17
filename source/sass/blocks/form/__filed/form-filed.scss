@@ -3,18 +3,51 @@
   position: relative;
 }
 
-.form__filed::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 62px);
-  height: 1px;
-  background-color: $main-color;
-  top: 7px;
-  right: 0;
-}
-
 .form__filed-info {
   @include normalForm();
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed::after {
+    content: none;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed {
+    padding-left: 218px;
+    padding-right: 50px;
+  }
+
+  .form__filed-info__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 6.5% 24px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__filed:nth-of-type(2n) {
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__filed {
+    padding-left: 19.5%;
+  }
+
+  .form__filed-info__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 19.5% 24px;
+  }
 }
 
 @import "__filed-mod/form__filed-modifiers";

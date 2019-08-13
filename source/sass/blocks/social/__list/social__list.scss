@@ -6,3 +6,11 @@
   align-items: center;
   padding: 25px 62px 23px 57px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .social__list {
+    align-items: center;
+    padding: 0;
+    width: 142px;
+  }
+}

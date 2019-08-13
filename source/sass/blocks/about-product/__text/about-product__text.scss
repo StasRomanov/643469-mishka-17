@@ -8,5 +8,28 @@
   font-size: 13px;
   font-weight: normal;
   margin-bottom: 25px;
-  padding-right: 14px;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .about-product__text-container {
+    padding: 29px 41px 15px 41px;
+  }
+
+  .about-product__text {
+    line-height: 2;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about-product__text-container {
+    padding: 28px 55px 29px 35px;
+    max-width: 231px;
+  }
+
+  .about-product__text {
+    margin-bottom: 46px;
+  }
 }

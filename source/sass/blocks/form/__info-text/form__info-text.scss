@@ -4,5 +4,13 @@
   font-weight: normal;
   line-height: 1.14;
   color: $main-text-color;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
+  display: block;
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__info-text {
+    margin: 0;
+    font-size: 17px;
+  }
 }

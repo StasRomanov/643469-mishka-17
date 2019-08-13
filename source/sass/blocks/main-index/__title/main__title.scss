@@ -9,5 +9,22 @@
   letter-spacing: 1px;
 }
 
-@import "__title-mod/main__title--form";
-@import "__title-mod/main__title--catalog";
+@media (min-width: $tabletWidthCatalog) {
+  .main__title {
+    padding: 153px 50px 50px 50px;
+    font-size: 43px;
+    line-height: 1.16;
+    letter-spacing: 2.5px;
+    min-height: 300px;
+    margin-bottom: 124px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main__title {
+    line-height: 1.08;
+    font-size: 53px;
+    min-height: 421px;
+    margin-bottom: 0;
+  }
+}

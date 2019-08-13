@@ -1,3 +1,32 @@
 .product-week {
   padding: 29px 30px 0 30px;
+  position: relative;
+}
+
+@media (max-width: $mobileWidth) {
+  .product-week {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-week {
+    padding: 43px 51px 54px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .product-week {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding: 126px 51px 72px 82px;
+  }
 }

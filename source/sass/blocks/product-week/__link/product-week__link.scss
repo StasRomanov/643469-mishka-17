@@ -10,3 +10,9 @@
 .product-week__link:active {
   @include normalButtonActive();
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .product-week__link {
+    margin-bottom: 0;
+  }
+}

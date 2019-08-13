@@ -10,3 +10,10 @@
   width: 32px;
   background-image: url("../../../../img/mail-svg.svg");
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__item {
+    margin-bottom: 56px;
+    width: fit-content;
+  }
+}

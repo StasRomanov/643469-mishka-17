@@ -5,3 +5,20 @@
   justify-content: space-between;
   padding: 22px 6px 10px 0;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  @media (max-width: $desktopWidth - 1px) {
+    .catalog__link {
+      margin-top: auto;
+      border-top: 1px solid #ececec;
+      padding: 20px 12px 6px 5px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog__link {
+    border-top: 1px solid #ececec;
+    padding: 20px 0 5px 0;
+  }
+}

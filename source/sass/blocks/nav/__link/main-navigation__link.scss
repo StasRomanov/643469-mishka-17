@@ -3,4 +3,39 @@
   line-height: 1.41;
   font-size: 17px;
   color: $main-hearer-text-color;
+  display: block;
+}
+
+@media (max-width: $mobileWidth) {
+  .main-navigation__link {
+    flex-grow: 1;
+    text-align: center;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__link {
+    padding: 0;
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__link {
+    padding: 25px 0 33px;
+  }
+}
+
+@media (min-width: $tabletWidthCatalog) {
+  .main-navigation__item--search .main-navigation__link {
+    font-size: 0;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-navigation__list--desktop .main-navigation__link {
+    padding: 16px 0 0 0;
+  }
 }

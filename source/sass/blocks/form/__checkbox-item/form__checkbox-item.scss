@@ -5,3 +5,16 @@
 .form__checkbox-item:last-child {
   margin-bottom: 0;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__checkbox-item {
+    min-width: 40.5%;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__checkbox-item {
+    min-width: 32.3%;
+  }
+}

@@ -8,3 +8,26 @@
   @include normalList();
   margin-top: 5px;
 }
+
+@media (min-width: $tabletWidthCatalog) {
+  .form__list {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px 12px 82px;
+    margin-right: auto;
+    margin-left: 0;
+    width: fit-content;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form__list {
+    padding-bottom: 7px;
+  }
+
+  .form__text-list,
+  .form__tel-list,
+  .form__email-list {
+    padding-right: 20%;
+  }
+}
