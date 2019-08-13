@@ -1,0 +1,10 @@
+.popup__title {
+  @include normalText();
+  font-size: 25px;
+  line-height: 1.2;
+  color: #000000;
+  max-width: 50%;
+  text-align: center;
+  padding-top: 36px;
+  margin-bottom: 25px;
+}
