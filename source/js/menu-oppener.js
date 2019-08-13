@@ -1,4 +1,4 @@
-window.onload = function () {
+(function () {
   var menuOpenerEl = document.querySelector(".main-navigation__menu-opener");
   var navigation = document.querySelectorAll(".main-navigation__list");
   var navigationClose = "main-navigation--close";
@@ -27,4 +27,4 @@ window.onload = function () {
       navList.classList.toggle(navigationClose);
     });
   });
-};
+})();

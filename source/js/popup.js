@@ -1,4 +1,4 @@
-window.onload = function () {
+(function () {
   var popupOpen = document.querySelector('.product-week__link');
   var popup = document.querySelector('.popup__wrapper');
 
@@ -12,4 +12,4 @@ window.onload = function () {
       popup.classList.add('popup__wrapper--hidden');
     }
   });
-};
+})();
