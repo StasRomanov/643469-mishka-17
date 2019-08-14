@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .about-product__video-start-icon:hover {
