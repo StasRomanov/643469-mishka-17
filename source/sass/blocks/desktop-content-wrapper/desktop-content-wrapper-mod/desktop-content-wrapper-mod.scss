@@ -2,6 +2,36 @@
   .desktop-content-wrapper--dark {
     background-color: #f1f1f1;
   }
+
+  .desktop-content-wrapper--line-big {
+    position: relative;
+  }
+
+  .desktop-content-wrapper--line-big::after {
+    @include normalPseudo();
+    z-index: 1;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    border: none;
+    width: 100%;
+    height: 24px;
+    bottom: -3px;
+    background-repeat-y: no-repeat;
+  }
+
+  .desktop-content-wrapper--line-dark {
+    position: relative;
+  }
+
+  .desktop-content-wrapper--line-dark::after {
+    @include normalPseudo();
+    z-index: 1;
+    border: none;
+    background-image: url("../img/bg-zigzag-line.svg");
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    background-size: contain;
+  }
 }
 
 @media (min-width: $desktopWidth) {
@@ -13,5 +43,13 @@
     background-image: url(../img/bg-zigzag-fill.svg);
     background-repeat: repeat-x;
     background-position: bottom;
+  }
+
+  .desktop-content-wrapper--line-big::after {
+    height: 34px;
+  }
+
+  .desktop-content-wrapper--line-dark::after {
+    height: 23px;
   }
 }

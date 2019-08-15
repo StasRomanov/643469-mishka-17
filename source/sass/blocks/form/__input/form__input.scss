@@ -83,7 +83,7 @@
   .form__input-text,
   .form__input-tel,
   .form__input-email {
-    height: 37px;
+    height: 35px;
     box-sizing: border-box;
     padding-bottom: 18px;
     line-height: 0.95;
@@ -91,6 +91,8 @@
     font-weight: normal;
     padding-left: 15px;
     background-color: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid #000000;
   }
 
   .form__input-feedback {
