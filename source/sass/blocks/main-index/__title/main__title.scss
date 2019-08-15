@@ -22,6 +22,7 @@
 
 @media (min-width: $desktopWidth) {
   .main__title {
+    @include desktopWidth();
     line-height: 1.08;
     font-size: 53px;
     min-height: 421px;

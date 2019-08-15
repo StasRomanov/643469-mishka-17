@@ -1,0 +1,17 @@
+@media (min-width: $tabletWidthCatalog) {
+  .desktop-content-wrapper--dark {
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .desktop-content-wrapper--dark {
+    background-color: #f1f1f1;
+  }
+
+  .desktop-content-wrapper--line {
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+}

@@ -3,20 +3,40 @@
   background-position: 50% -16px;
   background-repeat: no-repeat;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 180%;
+  }
 }
 
 @media (min-width: $tabletWidthCatalog) {
   .main {
     background-image: url("../img/hero-tablet@1x.jpg");
-    margin-top: -60px;
+    /*margin-top: -60px;*/
     margin-bottom: 18px;
     background-position: top;
+  }
+
+  @media (min-resolution: $retina) {
+    .main {
+      background-size: 150%;
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktopWidth) {
-  background-size: contain;
-  background-image: url("../img/hero-desktop@1x.jpg");
+  .main {
+    background-size: contain;
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: $retina) {
+    .main {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
 }
 
 @import "main-mod/main--form";

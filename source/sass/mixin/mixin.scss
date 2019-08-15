@@ -72,3 +72,11 @@
   @include normalButtonHover();
   color: rgba(255, 255, 255, 0.3);
 }
+
+@mixin desktopWidth() {
+  min-width: 1150px;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}

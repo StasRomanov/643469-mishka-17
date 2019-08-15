@@ -1,5 +1,6 @@
 @media (min-width: $desktopWidth) {
   .contact__wrapper {
+    @include desktopWidth();
     position: relative;
     max-width: 885px;
     padding: 142px 20px 87px 222px;

@@ -19,6 +19,7 @@
     padding-right: 50px;
     margin-bottom: 0;
     padding-bottom: 5px;
+    background-color: #f1f1f1;
   }
 
   .form__filed--email {
@@ -36,17 +37,21 @@
   .form__filed.form__filed--bonus {
     background-color: #ffffff;
     padding-top: 50px;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .form__filed.form__filed--tel,
   .form__filed--email {
-    padding-left: 19.5%;
-    padding-right: 19.5%;
+    @include desktopWidth();
+    padding-left: 226px;
+    padding-right: 226px;
+    background-color: #f1f1f1;
   }
 
   .form__filed.form__filed--bonus {
-    padding-right: 20%;
+    padding-right: 226px;
+    margin-bottom: 23px;
   }
 }

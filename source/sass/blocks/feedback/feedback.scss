@@ -12,11 +12,18 @@
     padding: 78px 45px 79px 45px;
     align-items: end;
   }
+
+  @media (min-resolution: $retina) {
+    .feedback {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 45.5%;
+    }
+  }
 }
 
 @media (min-width: $desktopWidth) {
   .feedback {
-    margin-left: 50px;
-    padding: 72px 45px 126px 174px;
+    @include desktopWidth();
+    padding: 72px 45px 126px 233px;
   }
 }
