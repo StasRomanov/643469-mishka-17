@@ -44,11 +44,12 @@
 
 @media (min-width: $desktopWidth) {
   .main-catalog__title {
+    @include desktopWidth();
     font-size: 53px;
     line-height: 1.08;
     padding: 92px 20px 86px 18px;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 

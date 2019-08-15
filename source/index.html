@@ -7,43 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 </head>
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-navigation__logo-link">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-          <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
-        </picture>
-      </a>
-      <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-navigation__list main-navigation__list--desktop">
-        <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Новые поступления</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#" class="main-navigation__link">Распродажа</a>
-        </li>
-      </ul>
-      <ul class="main-navigation__list main-navigation__list--user-info">
-        <li class="main-navigation__item main-navigation__item--search">
-          <a href="#" class="main-navigation__link">Поиск по сайту</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--basket">
-          <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <div class="main-navigation__add-info">Бесплатная доставка по России</div>
-    </nav>
-  </header>
+  <div class="desktop-content-wrapper">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation__logo-link">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img src="./img/mishka-logo-mobile-svg-copy.svg" class="logo-icon" alt="mishka" width="86" height="35">
+          </picture>
+        </a>
+        <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list main-navigation__list--desktop">
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Новые поступления</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list main-navigation__list--user-info">
+          <li class="main-navigation__item main-navigation__item--search">
+            <a href="#" class="main-navigation__link">Поиск по сайту</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--basket">
+            <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <div class="main-navigation__add-info">Бесплатная доставка по России</div>
+      </nav>
+    </header>
+  </div>
   <main class="main">
     <h1 class="main__title">Милые штуки ручной<br> работы для дома</h1>
     <section class="product-type">
@@ -56,77 +58,81 @@
           <h2 class="product-type__title">Детские игрушки</h2>
         </li>
       </ul>
-      <svg class="zigzag-line">
-        <use xlink:href="./img/svg/sprite.svg#zigzag"></use>
-      </svg>
     </section>
-    <section class="product-week">
-      <div class="product-week__wrapper">
-        <h2 class="product-week__title">Вязаные корзинки</h2>
-        <p class="product-week__description">товар недели</p>
-      </div>
-      <div class="product-week__text-wrapper">
-        <p class="product-week__text">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
-        </p>
-        <ul class="product-week__list">
-          <li class="product-week__item">
-            <p class="product-week__info product-week__info--options">Цвет:</p>
-            <p class="product-week__info">«Тиффани»/серый</p>
+    <svg class="zigzag-line">
+      <use xlink:href="./img/svg/sprite.svg#zigzag"></use>
+    </svg>
+    <div class="desktop-content-wrapper">
+      <section class="product-week">
+        <div class="product-week__wrapper">
+          <h2 class="product-week__title">Вязаные корзинки</h2>
+          <p class="product-week__description">товар недели</p>
+        </div>
+        <div class="product-week__text-wrapper">
+          <p class="product-week__text">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+          </p>
+          <ul class="product-week__list">
+            <li class="product-week__item">
+              <p class="product-week__info product-week__info--options">Цвет:</p>
+              <p class="product-week__info">«Тиффани»/серый</p>
+            </li>
+            <li class="product-week__item">
+              <p class="product-week__info product-week__info--options">Диаметр:</p>
+              <p class="product-week__info">25 см</p>
+            </li>
+            <li class="product-week__item">
+              <p class="product-week__info product-week__info--options">Высота:</p>
+              <p class="product-week__info">15 см</p>
+            </li>
+          </ul>
+        </div>
+        <div class="product-week__info-wrapper">
+          <p class="product-week__price">Цена: 990 руб.</p>
+          <a href="#" class="product-week__link">Заказать</a>
+        </div>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.webp 1x, ./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.webp 2x, ./img/triple-set-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.webp 1x, ./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.webp 2x, ./img/triple-set-tablet@2x.jpg 2x">
+          <source srcset="./img/triple-set-mobile@1x.webp 1x, ./img/triple-set-mobile@2x.webp 2x, ./img/triple-set-mobile@2x.jpg 2x">
+          <img src="./img/triple-set-mobile@1x.jpg" class="product-week__picture" height="315" width="260" alt="вязаные корзинки (3 штуки)">
+        </picture>
+      </section>
+    </div>
+    <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
+    <div class="desktop-content-wrapper">
+      <section class="about-us">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__wrapper">
+            <ul class="about-us__wrapper__list about-us__wrapper__list--first">
+              <li class="about-us__item about-us__item--flower">
+                <p class="about-us__text-content">Экологически чистые материалы</p>
+              </li>
+              <li class="about-us__item about-us__item--style">
+                <p class="about-us__text-content">Скандинавский стиль по российской цене</p>
+              </li>
+              <li class="about-us__item about-us__item--like">
+                <p class="about-us__text-content">Увеличивает лайки на фотографиях</p>
+              </li>
+            </ul>
           </li>
-          <li class="product-week__item">
-            <p class="product-week__info product-week__info--options">Диаметр:</p>
-            <p class="product-week__info">25 см</p>
-          </li>
-          <li class="product-week__item">
-            <p class="product-week__info product-week__info--options">Высота:</p>
-            <p class="product-week__info">15 см</p>
+          <li class="about-us__wrapper">
+            <ul class="about-us__wrapper__list about-us__wrapper__list--second">
+              <li class="about-us__item about-us__item--handmade">
+                <p class="about-us__text-content">Связано вручную с любовью и умилением</p>
+              </li>
+              <li class="about-us__item about-us__item--rocket">
+                <p class="about-us__text-content">Поддержка отечественного производителя</p>
+              </li>
+              <li class="about-us__item about-us__item--bonus">
+                <p class="about-us__text-content">Поставляется в подарочной упаковке</p>
+              </li>
+            </ul>
           </li>
         </ul>
-      </div>
-      <div class="product-week__info-wrapper">
-        <p class="product-week__price">Цена: 990 руб.</p>
-        <a href="#" class="product-week__link">Заказать</a>
-      </div>
-      <picture>
-        <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.webp 1x, ./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.webp 2x, ./img/triple-set-desktop@2x.jpg">
-        <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.webp 1x, ./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.webp 2x, ./img/triple-set-tablet@2x.jpg 2x">
-        <source srcset="./img/triple-set-mobile@1x.webp 1x, ./img/triple-set-mobile@2x.webp 2x, ./img/triple-set-mobile@2x.jpg 2x">
-        <img src="./img/triple-set-mobile@1x.jpg" class="product-week__picture" height="315" width="260" alt="вязаные корзинки (3 штуки)">
-      </picture>
-    </section>
-    <img src="./img/zigzag-line-desktop-svg.svg" class="decoration-zigzag" height="23" width="1150" alt="разделение страницы зигзагом">
-    <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__wrapper">
-          <ul class="about-us__wrapper__list about-us__wrapper__list--first">
-            <li class="about-us__item about-us__item--flower">
-              <p class="about-us__text-content">Экологически чистые материалы</p>
-            </li>
-            <li class="about-us__item about-us__item--style">
-              <p class="about-us__text-content">Скандинавский стиль по российской цене</p>
-            </li>
-            <li class="about-us__item about-us__item--like">
-              <p class="about-us__text-content">Увеличивает лайки на фотографиях</p>
-            </li>
-          </ul>
-        </li>
-        <li class="about-us__wrapper">
-          <ul class="about-us__wrapper__list about-us__wrapper__list--second">
-            <li class="about-us__item about-us__item--handmade">
-              <p class="about-us__text-content">Связано вручную с любовью и умилением</p>
-            </li>
-            <li class="about-us__item about-us__item--rocket">
-              <p class="about-us__text-content">Поддержка отечественного производителя</p>
-            </li>
-            <li class="about-us__item about-us__item--bonus">
-              <p class="about-us__text-content">Поставляется в подарочной упаковке</p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      </section>
+    </div>
     <section class="feedback">
       <h2 class="feedback__title">Отзывы</h2>
       <ul class="feedback__list">
@@ -173,35 +179,37 @@
       </section>
     </div>
   </main>
-  <footer class="main-footer">
-    <section class="logo">
-      <img src="img/logo-footer.svg" width="102" height="34" class="logo__picture" alt="mishka">
-    </section>
-    <section class="social">
-      <h3 class="visually-hidden">пишите нам в соцсетях</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <svg width="22" height="22" class="social__icon">
-            <use xlink:href="./img/svg/sprite.svg#insta"></use>
-          </svg>
-        </li>
-        <li class="social__item">
-          <svg width="15" height="28" class="social__icon">
-            <use xlink:href="./img/svg/sprite.svg#fb"></use>
-          </svg>
-        </li>
-        <li class="social__item">
-          <svg width="23" height="20" class="social__icon">
-            <use xlink:href="./img/svg/sprite.svg#tw"></use>
-          </svg>
-        </li>
-      </ul>
-    </section>
-    <section class="developer">
-      <h3 class="developer__title">Разработано</h3>
-      <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
-    </section>
-  </footer>
+  <div class="desktop-content-wrapper desktop-content-wrapper--dark">
+    <footer class="main-footer">
+      <section class="logo">
+        <img src="img/logo-footer.svg" width="102" height="34" class="logo__picture" alt="mishka">
+      </section>
+      <section class="social">
+        <h3 class="visually-hidden">пишите нам в соцсетях</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <svg width="22" height="22" class="social__icon">
+              <use xlink:href="./img/svg/sprite.svg#insta"></use>
+            </svg>
+          </li>
+          <li class="social__item">
+            <svg width="15" height="28" class="social__icon">
+              <use xlink:href="./img/svg/sprite.svg#fb"></use>
+            </svg>
+          </li>
+          <li class="social__item">
+            <svg width="23" height="20" class="social__icon">
+              <use xlink:href="./img/svg/sprite.svg#tw"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="developer">
+        <h3 class="developer__title">Разработано</h3>
+        <img src="./img/htmlacademy-svg.svg" class="developer__icon" width="27" height="34" alt="html academy">
+      </section>
+    </footer>
+  </div>
   <div class="popup__wrapper popup__wrapper--hidden">
     <section class="popup">
       <h3 class="popup__title">Добавить в корзину</h3>

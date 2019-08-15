@@ -31,6 +31,7 @@
 
 @media (min-width: $desktopWidth) {
   .catalog {
+    @include desktopWidth();
     padding: 113px 51px 0 49px;
   }
 }

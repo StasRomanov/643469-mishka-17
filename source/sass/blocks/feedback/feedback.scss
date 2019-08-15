@@ -23,7 +23,7 @@
 
 @media (min-width: $desktopWidth) {
   .feedback {
-    margin-left: 50px;
-    padding: 72px 45px 126px 174px;
+    @include desktopWidth();
+    padding: 72px 45px 126px 233px;
   }
 }

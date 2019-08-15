@@ -10,6 +10,7 @@
 
 @media (min-width: $desktopWidth) {
   .about-product {
+    @include desktopWidth();
     padding: 0 50px 105px 50px;
   }
 }

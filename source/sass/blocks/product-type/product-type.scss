@@ -3,3 +3,9 @@
     position: relative;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .product-type {
+    @include desktopWidth();
+  }
+}

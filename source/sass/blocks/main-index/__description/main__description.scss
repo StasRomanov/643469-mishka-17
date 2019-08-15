@@ -33,9 +33,10 @@
 
 @media (min-width: $desktopWidth) {
   .main--form .main__description {
+    @include desktopWidth();
     font-size: 17px;
     font-weight: normal;
     line-height: 1.76;
-    padding: 105px 19.5% 24px 19.5%;
+    padding: 105px 224px 23px;
   }
 }

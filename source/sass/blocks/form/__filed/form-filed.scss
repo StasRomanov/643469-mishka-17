@@ -30,7 +30,6 @@
 
 @media (min-width: $tabletWidthCatalog) {
   .form__filed:nth-of-type(2n) {
-    background-color: #f1f1f1;
     padding-top: 30px;
     margin-bottom: 28px;
   }
@@ -38,7 +37,8 @@
 
 @media (min-width: $desktopWidth) {
   .form__filed {
-    padding-left: 19.5%;
+    @include desktopWidth();
+    padding-left: 226px;
   }
 
   .form__filed-info__text-wrapper {
@@ -47,6 +47,10 @@
     flex-direction: row-reverse;
     align-items: center;
     padding: 20px 19.5% 24px;
+  }
+
+  .form__filed-info {
+    @include desktopWidth();
   }
 }
 

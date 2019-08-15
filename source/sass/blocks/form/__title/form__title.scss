@@ -64,15 +64,21 @@
   .form__title-wrapper::after {
     content: none;
   }
-}
 
-@media (min-width: $desktopWidth) {
-  .main__title--form {
-    padding-bottom: 99px;
+  .desktop-content-wrapper .form__title {
+    top: 67px;
+  }
+
+  .form__filed--email .form__title {
+    top: 41px;
   }
 }
 
 @media (min-width: $desktopWidth) {
+  .main__title--form {
+    padding-bottom: 121px;
+  }
+
   .form__title {
     left: 10%;
   }

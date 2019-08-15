@@ -7,6 +7,7 @@
   .product-week {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
   }
 }
 
@@ -23,11 +24,15 @@
 
 @media (min-width: $desktopWidth) {
   .product-week {
+    z-index: 1;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
     padding: 126px 51px 72px 82px;
+    max-width: 1150px;
+    min-width: 1150px;
+    box-sizing: border-box;
   }
 }
