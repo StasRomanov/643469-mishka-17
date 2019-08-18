@@ -108,6 +108,6 @@ gulp.task("admin_server", function () {
 
 });
 
-gulp.task("admin", gulp.series("clean","css","css_admin","html_admin","img","webp","sprite","js"));
+gulp.task("admin", gulp.series("clean","css","css_admin","html_admin","img","webp","sprite","js","fonts"));
 
 gulp.task("start", gulp.series("css","webp", "server"));
