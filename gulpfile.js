@@ -54,11 +54,8 @@ gulp.task('clean', function(){
 gulp.task("css_admin", function () {
   return gulp.src("./source/**/*.css")
     .pipe(mincss())
-    .pipe(rename(function (path) {
-      path.basename += "-min";
-      path.extname = ".css";
-    }))
-    .pipe(gulp.dest('./build'));
+    .pipe(rename("style-min.css"))
+    .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task("html_admin", function () {
@@ -83,8 +80,10 @@ gulp.task("js", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("./source/img/*.svg")
-    .pipe(sprite())
+  return gulp.src(["./source/img/icon-*.svg","./source/img/bg*.svg"])
+    .pipe(sprite({
+      inlineSvg: true
+    }))
     .pipe(rename(function (path) {
       path.basename = "sprite";
       path.extname = ".svg";
@@ -92,8 +91,12 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("./build/img/svg"))
 });
 
+gulp.task("fonts", function () {
+  return gulp.src("source/fonts/**/*.*")
+    .pipe(gulp.dest('./build/fonts'));
+});
+
 gulp.task("admin_server", function () {
-  gulp.series("admin");
 
   server.init({
     server: "build/",
@@ -103,8 +106,6 @@ gulp.task("admin_server", function () {
     ui: false
   });
 
-  gulp.watch("source/css/*.css", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("admin", gulp.series("clean","css","css_admin","html_admin","img","webp","sprite","js"));
