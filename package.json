@@ -9,6 +9,7 @@
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.0.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
@@ -27,7 +28,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp css",
     "start": "gulp start",
-    "admin": "gulp admin"
+    "admin": "gulp admin",
+    "admin-server": "gulp admin_server"
   },
   "browserslist": [
     "last 2 versions",
