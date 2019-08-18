@@ -48,7 +48,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task('clean', function(){
-  return del('./build/**', {force:true});
+  return del('./build', {force:true});
 });
 
 gulp.task("css_admin", function () {

@@ -28,7 +28,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp admin",
     "start": "gulp start",
-    "admin-server": "gulp admin_server"
+    "admin-server": "gulp admin_server",
+    "clean":"gulp clean"
   },
   "browserslist": [
     "last 2 versions",
