@@ -3,6 +3,8 @@
 }
 
 .social__icon:hover {
+  transition: fill;
+  transition-duration: 0.4s;
   fill: #46c1ae;
 }
 

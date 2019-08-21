@@ -89,6 +89,7 @@ gulp.task("sprite", function () {
       path.extname = ".svg";
     }))
     .pipe(gulp.dest("./build/img/svg"))
+    .pipe(gulp.dest("./source/img/svg"))
 });
 
 gulp.task("fonts", function () {

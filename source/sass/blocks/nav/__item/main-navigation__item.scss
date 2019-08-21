@@ -8,10 +8,14 @@
 }
 
 .main-navigation__item:hover .main-navigation__link {
+  transition: color;
+  transition-duration: 0.4s;
   color: rgba(0, 0, 0, 0.6);
 }
 
 .main-navigation__item:active .main-navigation__link {
+  transition: color;
+  transition-duration: 0.4s;
   color: rgba(0, 0, 0, 0.3);
 }
 

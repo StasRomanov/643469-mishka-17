@@ -12,6 +12,8 @@
 }
 
 .catalog__title:hover {
+  transition: opacity;
+  transition-duration: 0.4s;
   opacity: 0.6;
 }
 

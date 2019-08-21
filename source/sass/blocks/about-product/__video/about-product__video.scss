@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
+  transition: scale, opacity;
+  transition-duration: 0.4s;
 
   @media (min-resolution: $retina) {
     background-image: url("../img/video-mobile@2x.jpg");

@@ -24,6 +24,7 @@
 
 @media (min-width: $desktopWidth) {
   .product-week {
+    @include desktopWidth();
     z-index: 1;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -31,8 +32,5 @@
     align-items: flex-start;
     position: relative;
     padding: 126px 51px 94px 82px;
-    max-width: 1150px;
-    min-width: 1150px;
-    box-sizing: border-box;
   }
 }

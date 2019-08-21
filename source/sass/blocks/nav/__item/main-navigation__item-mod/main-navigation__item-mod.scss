@@ -17,6 +17,8 @@
   background-image: url("../img/cart-svg.svg");
   width: 21px;
   height: 19px;
+  transition: opacity;
+  transition-duration: 0.4s;
 }
 
 .main-navigation__item--basket:hover::after {
@@ -60,10 +62,11 @@
   }
 
   .main-navigation__item--basket::after {
-    left: -50px;
+    left: -31px;
   }
 
   .main-navigation__item--basket {
     justify-content: flex-end;
+    width: 50%;
   }
 }

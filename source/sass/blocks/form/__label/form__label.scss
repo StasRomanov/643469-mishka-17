@@ -6,10 +6,14 @@
 }
 
 .form__label:hover.form__label::after {
+  transition: border;
+  transition-duration: 0.4s;
   border: solid 2px #62d1ba;
 }
 
 .form__label:active.form__label::after {
+  transition: border;
+  transition-duration: 0.4s;
   border: solid 2px rgba(68, 68, 68, 0.3);
 }
 

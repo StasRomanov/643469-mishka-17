@@ -1,8 +1,12 @@
 .catalog__icon:hover {
+  transition: fill;
+  transition-duration: 0.4s;
   fill: #63d1bb;
 }
 
 .catalog__icon:active {
+  transition: fill;
+  transition-duration: 0.4s;
   fill: #63d1bb;
   opacity: 0.3;
 }

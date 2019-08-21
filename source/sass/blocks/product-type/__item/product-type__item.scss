@@ -5,6 +5,8 @@
 }
 
 .product-type__item:hover {
+  transition: background-color;
+  transition-duration: 0.4s;
   background-color: #59d5bc;
 }
 
@@ -13,6 +15,8 @@
 }
 
 .product-type__item:nth-child(2n) {
+  transition: background-color, opacity;
+  transition-duration: 0.4s;
   background-color: #56c3b2;
 }
 

@@ -16,10 +16,14 @@
 }
 
 .feedback__button-arrow:hover {
+  transition: opacity;
+  transition-duration: 0.4s;
   opacity: 0.6;
 }
 
 .feedback__button-arrow:active {
+  transition: opacity;
+  transition-duration: 0.4s;
   opacity: 0.3;
 }
 

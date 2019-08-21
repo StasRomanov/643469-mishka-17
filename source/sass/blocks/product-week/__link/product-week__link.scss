@@ -1,5 +1,7 @@
 .product-week__link {
   @include normalButton();
+  transition: background-color, color;
+  transition-duration: 0.4s;
   margin-bottom: 27px;
 }
 

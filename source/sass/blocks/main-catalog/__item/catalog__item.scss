@@ -23,6 +23,7 @@
 
 @media (min-width: $desktopWidth) {
   .catalog__item {
+    width: calc(100% / 3 - 28px);
     max-width: 316px;
     margin-bottom: 57px;
   }

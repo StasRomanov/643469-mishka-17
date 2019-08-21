@@ -17,14 +17,14 @@
 
 @media (min-width: $tabletWidthCatalog) {
   .main-header {
-    padding: 0 50px;
+    padding: 0 5%;
     margin-bottom: -61px;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .main-header {
-    padding: 0 50px;
+    padding: 0 4.5%;
     margin-bottom: -80px;
     max-width: 1150px;
     box-sizing: border-box;

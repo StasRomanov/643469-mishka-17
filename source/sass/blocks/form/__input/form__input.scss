@@ -40,7 +40,10 @@
 .form__input-email:active,
 .form__input-tel:focus,
 .form__input-email:focus {
-  box-shadow: inset 0 -2px 0 0 #62d1ba;
+  transition: border-bottom-color;
+  transition-duration: 0.5s;
+  border-bottom: 2px solid #62d1ba;
+  outline: none;
 }
 
 .form__input-feedback {
@@ -60,7 +63,10 @@
 .form__input-feedback:hover,
 .form__input-feedback:focus,
 .form__input-feedback:active {
+  transition: border-bottom-color;
+  transition-duration: 0.5s;
   border: solid 2px #62d1ba;
+  outline: none;
 }
 
 .form__input-feedback::placeholder {
@@ -73,6 +79,8 @@
 .form__input-email:active + .form__input-icon,
 .form__input-tel:focus + .form__input-icon,
 .form__input-email:focus + .form__input-icon {
+  transition: fill;
+  transition-duration: 0.4s;
   fill: #62d1ba;
   opacity: 1;
 }

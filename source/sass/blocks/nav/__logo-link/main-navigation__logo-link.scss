@@ -1,15 +1,21 @@
 .main-navigation__logo-link {
-  margin: 0 auto;
+  margin: 0;
   padding-top: 22px;
   min-height: 80px;
   text-align: center;
+  z-index: 9;
+  background-color: #ffffff;
 }
 
-.main-navigation__logo-link:hover {
+.main-navigation__logo-link > a:first-child:hover {
+  transition: opacity;
+  transition-duration: 0.4s;
   opacity: 0.6;
 }
 
-.main-navigation__logo-link:active {
+.main-navigation__logo-link > a:first-child:active {
+  transition: opacity;
+  transition-duration: 0.4s;
   opacity: 0.3;
 }
 
@@ -19,6 +25,7 @@
     min-height: 90px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .logo-icon {
