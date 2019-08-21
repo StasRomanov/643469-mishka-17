@@ -1,13 +1,13 @@
 @media (min-width: $tabletWidthCatalog) {
-  .desktop-content-wrapper--dark {
+  .content-wrapper--dark {
     background-color: #f1f1f1;
   }
 
-  .desktop-content-wrapper--line-big {
+  .content-wrapper--line-big {
     position: relative;
   }
 
-  .desktop-content-wrapper--line-big::after {
+  .content-wrapper--line-big::after {
     @include normalPseudo();
     z-index: 1;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -18,11 +18,11 @@
     background-repeat-y: no-repeat;
   }
 
-  .desktop-content-wrapper--line-dark {
+  .content-wrapper--line-dark {
     position: relative;
   }
 
-  .desktop-content-wrapper--line-dark::after {
+  .content-wrapper--line-dark::after {
     @include normalPseudo();
     z-index: 1;
     border: none;
@@ -36,25 +36,25 @@
 }
 
 @media (min-width: $desktopWidth) {
-  .desktop-content-wrapper--dark {
+  .content-wrapper--dark {
     background-color: #f1f1f1;
   }
 
-  .desktop-content-wrapper--line {
+  .content-wrapper--line {
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: bottom;
   }
 
-  .desktop-content-wrapper--line-big::after {
+  .content-wrapper--line-big::after {
     height: 34px;
   }
 
-  .desktop-content-wrapper--line-dark::after {
+  .content-wrapper--line-dark::after {
     height: 23px;
   }
 
-  .desktop-content-wrapper--transparent {
+  .content-wrapper--transparent {
     background-color: transparent;
   }
 }

@@ -1,5 +1,5 @@
 @media (min-width: $desktopWidth) {
-  .desktop-content-wrapper {
+  .content-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -7,4 +7,4 @@
   }
 }
 
-@import "desktop-content-wrapper-mod/desktop-content-wrapper-mod";
+@import "content-wrapper-mod/desktop-content-wrapper-mod";
