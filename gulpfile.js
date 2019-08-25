@@ -11,7 +11,7 @@ var webp = require("gulp-webp");
 var del = require("del");
 var mincss = require("gulp-csso");
 var sprite = require("gulp-svgstore");
-var post_html = require("posthtml-include");
+var post_html = require("gulp-html-replace");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 
@@ -60,7 +60,7 @@ gulp.task("css_admin", function () {
 
 gulp.task("html_admin", function () {
   return gulp.src("./source/**/*.html")
-    //.pipe(post_html())
+    .pipe(post_html({minify: '<link rel="stylesheet" href="./css/style-min.css">'}))
     .pipe(gulp.dest("./build"));
 });
 

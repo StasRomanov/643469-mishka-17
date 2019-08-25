@@ -1,3 +1,4 @@
+"use strict";
 (function () {
   var menuOpenerEl = document.querySelector(".main-navigation__menu-opener");
   var navigation = document.querySelectorAll(".main-navigation__list");

@@ -9,6 +9,7 @@
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
+    "gulp-html-replace": "^1.6.2",
     "gulp-imagemin": "^6.0.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
@@ -29,7 +30,7 @@
     "build": "gulp admin",
     "start": "gulp start",
     "admin-server": "gulp admin_server",
-    "clean":"gulp clean"
+    "clean": "gulp clean"
   },
   "browserslist": [
     "last 2 versions",

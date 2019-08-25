@@ -12,3 +12,9 @@
     letter-spacing: 1.5px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .contacts__text-content {
+    letter-spacing: normal;
+  }
+}
