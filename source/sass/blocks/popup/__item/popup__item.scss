@@ -1,8 +1,7 @@
 .popup__item {
   @include normalText();
-  border: solid 2px #444444;
+  border: none;
   background-color: #ffffff;
-  padding: 20px 34px;
 }
 
 @import "popup__item-mod/popup__item-mod";

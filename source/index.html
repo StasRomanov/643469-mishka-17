@@ -218,18 +218,25 @@
     </footer>
   </div>
   <div class="popup__wrapper popup__wrapper--hidden">
-    <section class="popup">
+    <form class="popup" action="https://echo.htmlacademy.ru" method="post" name="week-product-size">
       <h3 class="popup__title">Добавить в корзину</h3>
       <p class="popup__description">Выберите размер:</p>
       <ul class="popup__list">
-        <li class="popup__item popup__item--active">S</li>
-        <li class="popup__item">M</li>
-        <li class="popup__item">L</li>
+        <li class="popup__item">
+          <input type="radio" name="size" id="s" value="small" class="visually-hidden popup-radio" checked>
+          <label for="s" class="popup__text">S</label>
+        </li>
+        <li class="popup__item">
+          <input type="radio" name="size" id="m" value="medium" class="visually-hidden popup-radio">
+          <label for="m" class="popup__text">M</label>
+        </li>
+        <li class="popup__item">
+          <input type="radio" name="size" id="l" value="large" class="visually-hidden popup-radio">
+          <label for="l" class="popup__text">L</label>
+        </li>
       </ul>
-      <a class="popup__link" href="#">
-        <p class="popup__tpopup__link-text">Добавить</p>
-      </a>
-    </section>
+      <button class="popup__link">Добавить</button>
+    </form>
   </div>
   <script src="js/menu-oppener.js"></script>
   <script src="js/popup.js"></script>

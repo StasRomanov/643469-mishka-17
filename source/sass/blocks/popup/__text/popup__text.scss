@@ -1,0 +1,13 @@
+.popup__text {
+  padding: 20px 34px;
+  display: block;
+  border: solid 2px #444444;
+}
+
+.popup__text:hover {
+  border: solid 2px rgba(68, 68, 68, 0.3);
+}
+
+.popup-radio:checked ~ .popup__text {
+  border: solid 2px #63d1bb;
+}

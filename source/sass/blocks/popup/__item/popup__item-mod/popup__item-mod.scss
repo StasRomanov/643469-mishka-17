@@ -1,6 +1,7 @@
-.popup__item {
+.popup__item--active {
   @include normalText();
-  border: solid 2px #63d1bb;
+  border: none;
   background-color: #ffffff;
   padding: 20px 34px;
 }
+
