@@ -11,11 +11,11 @@
 
 @media (max-width: $mobileWidth) {
   .main__title {
-    background-image: url(../img/hero-mobile@1x.jpg);
+    background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center top;
 
     @media (min-resolution: $retina) {
-      background-image: url(../img/hero-mobile@2x.jpg);
+      background-image: url("../img/hero-mobile@2x.jpg");
       background-size: 555px;
       background-position: center -11px;
     }
@@ -40,7 +40,7 @@
     font-size: 53px;
     min-height: 625px;
     margin-bottom: 0;
-    background-image: url(../img/hero-desktop@2x.jpg);
+    background-image: url("../img/hero-desktop@2x.jpg");
     background-size: 1150px;
   }
 }
