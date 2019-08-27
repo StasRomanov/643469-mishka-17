@@ -49,7 +49,7 @@
     @include desktopWidth();
     font-size: 53px;
     line-height: 1.08;
-    padding: 92px 20px 86px 18px;
+    padding: 92px 20px 122px 18px;
     letter-spacing: 2px;
     margin: 0 auto;
   }
@@ -70,7 +70,7 @@
   .catalog__title {
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 1px;
+    letter-spacing: normal;
     max-width: 96%;
   }
 }

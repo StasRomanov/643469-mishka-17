@@ -9,10 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 </head>
 <body>
-  <div class="content-wrapper">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-navigation__logo-link" href="./index.html">
+<div class="content-wrapper">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <div class="main-navigation__logo-link">
+        <a>
           <picture>
             <source media="(min-width: 1024px)" srcset="./img/logo-desktop.svg">
             <source media="(min-width: 767px)" srcset="./img/logo-tablet.svg">
@@ -20,41 +21,39 @@
           </picture>
         </a>
         <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Каталог товаров</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__list main-navigation__list--desktop">
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Новые поступления</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__list main-navigation__list--user-info">
-          <li class="main-navigation__item main-navigation__item--search">
-            <a href="#" class="main-navigation__link">Поиск по сайту</a>
-          </li>
-          <li class="main-navigation__item main-navigation__item--basket">
-            <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <div class="main-navigation__add-info">Бесплатная доставка по России</div>
-      </nav>
-    </header>
-  </div>
+      </div>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="./form.html" class="main-navigation__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list main-navigation__list--desktop">
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Новые поступления</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list main-navigation__list--user-info">
+        <li class="main-navigation__item main-navigation__item--search">
+          <a href="#" class="main-navigation__link">Поиск по сайту</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--basket">
+          <a href="./form.html" class="main-navigation__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <div class="main-navigation__add-info">Бесплатная доставка по России</div>
+    </nav>
+  </header>
+</div>
   <main class="main-catalog">
-    <div class="content-wrapper content-wrapper--dark">
+    <div class="content-wrapper content-wrapper--dark content-wrapper--line-big">
       <h1 class="main-catalog__title">Каталог товаров</h1>
     </div>
-    <svg width="769" height="23" class="zigzag-line" fill="#ffffff">
-      <use xlink:href="./img/svg/sprite.svg#bg-zigzag-fill"></use>
-    </svg>
     <div class="content-wrapper">
       <section class="catalog">
         <h2 class="visually-hidden">наши лучшие товаы!</h2>
@@ -170,7 +169,7 @@
       </section>
     </footer>
   </div>
-  <script src="js/menu-oppener.js"></script>
+  <script src="js/menu-opener.js"></script>
   <script src="js/picture.js"></script>
 </body>
 </html>

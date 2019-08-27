@@ -1,3 +1,19 @@
+.content-wrapper--line-dark {
+  position: relative;
+}
+
+.content-wrapper--line-dark::after {
+  @include normalPseudo();
+  z-index: 1;
+  border: none;
+  background-image: url("../img/bg-zigzag-line.svg");
+  width: 100%;
+  height: 7px;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .content-wrapper--dark {
     background-color: #f1f1f1;
@@ -51,6 +67,9 @@
   }
 
   .content-wrapper--line-dark::after {
+    max-width: 1050px;
+    right: 50%;
+    transform: translateX(50%);
     height: 23px;
   }
 

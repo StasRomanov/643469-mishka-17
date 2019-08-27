@@ -6,17 +6,17 @@
   .form__checkbox-list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 62px 0 19px 62px;
+    justify-content: flex-start;
+    padding: 62px 0 10px 62px;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .form__checkbox-list {
     width: auto;
-    padding-right: 34px;
-    padding-top: 62px;
-    padding-bottom: 13px;
+    padding: 62px 34px 11px 62px;
     justify-content: flex-start;
+    position: relative;
+    z-index: 5;
   }
 }

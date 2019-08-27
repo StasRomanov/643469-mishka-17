@@ -8,6 +8,14 @@
   letter-spacing: normal;
 }
 
+.form__submit-button:hover {
+  @include normalButtonHover();
+}
+
+.form__submit-button:active {
+  @include normalButtonActive();
+}
+
 @media (min-width: 768px) {
   .form__submit-button {
     width: 34.5%;

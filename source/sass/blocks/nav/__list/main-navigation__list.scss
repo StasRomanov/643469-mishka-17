@@ -19,10 +19,29 @@
     }
   }
 
+  @keyframes menuClose {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(-500px);
+    }
+  }
+
   .main-navigation__list-animation {
     animation-name: menuOpen;
     animation-duration: 0.4s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  }
+
+  .main-navigation__list-animation-close {
+    animation-name: menuClose;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
   }
 }

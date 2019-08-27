@@ -9,10 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
 </head>
 <body>
-  <div class="content-wrapper">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-navigation__logo-link" href="./index.html">
+<div class="content-wrapper">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <div class="main-navigation__logo-link">
+        <a href="./index.html">
           <picture>
             <source media="(min-width: 1024px)" srcset="./img/logo-desktop.svg">
             <source media="(min-width: 767px)" srcset="./img/logo-tablet.svg">
@@ -20,34 +21,35 @@
           </picture>
         </a>
         <a class="main-navigation__menu-opener main-navigation__menu-opener--open" href="#"></a>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__list main-navigation__list--desktop">
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Новые поступления</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#" class="main-navigation__link">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__list main-navigation__list--user-info">
-          <li class="main-navigation__item main-navigation__item--search">
-            <a href="#" class="main-navigation__link">Поиск по сайту</a>
-          </li>
-          <li class="main-navigation__item main-navigation__item--basket">
-            <a href="#" class="main-navigation__link">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <div class="main-navigation__add-info">Бесплатная доставка по России</div>
-      </nav>
-    </header>
-  </div>
+      </div>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="./catalog.html" class="main-navigation__link">Каталог товаров</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list main-navigation__list--desktop">
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Новые поступления</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list main-navigation__list--user-info">
+        <li class="main-navigation__item main-navigation__item--search">
+          <a href="#" class="main-navigation__link">Поиск по сайту</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--basket">
+          <a href="#" class="main-navigation__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <div class="main-navigation__add-info">Бесплатная доставка по России</div>
+    </nav>
+  </header>
+</div>
   <main class="main main--form">
     <div class="content-wrapper content-wrapper--dark content-wrapper--line">
       <h1 class="main__title main__title--form">Вязание на заказ</h1>
@@ -87,7 +89,7 @@
               <label class="form__checkbox-label form__label" for="gray">Серый</label>
             </li>
             <li class="form__checkbox-item form__item">
-              <input class="form__checkbox form__input" type="checkbox" name="checkbox-3" value="Tiffany" id="tiffany" checked>
+              <input class="form__checkbox form__input" type="checkbox" name="checkbox-3" value="Tiffany" id="tiffany">
               <label class="form__checkbox-label form__label" for="tiffany">«Тиффани»</label>
             </li>
             <li class="form__checkbox-item form__item">
@@ -95,11 +97,11 @@
               <label class="form__checkbox-label form__label" for="black">Черный</label>
             </li>
             <li class="form__checkbox-item form__item">
-              <input class="form__checkbox form__input" type="checkbox" name="checkbox-5" value="Pink" id="pink" checked>
+              <input class="form__checkbox form__input" type="checkbox" name="checkbox-5" value="Pink" id="pink">
               <label class="form__checkbox-label form__label" for="pink">Розовый</label>
             </li>
             <li class="form__checkbox-item form__item">
-              <input class="form__checkbox form__input" type="checkbox" name="checkbox-6" value="Orange" id="orange" checked>
+              <input class="form__checkbox form__input" type="checkbox" name="checkbox-6" value="Orange" id="orange">
               <label class="form__checkbox-label form__label" for="orange">Оранжевый</label>
             </li>
           </ul>
@@ -131,7 +133,7 @@
           <div class="form__title-wrapper">
             <span class="form__title">тел</span>
           </div>
-            <input class="form__input-tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" required>
+            <input class="form__input-tel" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="tel" name="Telephone" onkeypress='validate(event)' required>
             <svg width="25" height="24" class="form__input-icon form__input-icon--tel">
               <use xlink:href="./img/svg/sprite.svg#tel"></use>
             </svg>
@@ -197,7 +199,8 @@
       </section>
     </footer>
   </div>
-  <script src="js/menu-oppener.js"></script>
+  <script src="js/menu-opener.js"></script>
+  <script src="js/tel.js"></script>
   <script src="js/picture.js"></script>
 </body>
 </html>

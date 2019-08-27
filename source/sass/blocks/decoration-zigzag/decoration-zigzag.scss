@@ -8,6 +8,16 @@
   display: none;
 }
 
+.decoration-zigzag-wrapper {
+  height: 8px;
+  width: 100%;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: left;
+  transform: rotate(180deg);
+}
+
 @media (min-width: $tabletWidthCatalog) {
   .zigzag-line {
     display: block;

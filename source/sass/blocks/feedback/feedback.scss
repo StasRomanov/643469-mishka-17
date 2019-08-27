@@ -1,5 +1,5 @@
 .feedback {
-  padding: 17px 29px 0 29px;
+  padding: 17px 29px 16px 29px;
   color: $main-hearer-text-color;
 }
 
@@ -9,15 +9,14 @@
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
-    padding: 78px 45px 79px 45px;
+    padding: 78px 45px 91px 45px;
     align-items: end;
   }
 
   @media (min-resolution: $retina) {
     .feedback {
       background-image: url("../img/review@2x.jpg");
-      background-size: 30.5%;
-      background-position-x: 6.5%;
+      background-size: 350px;
     }
   }
 }
@@ -25,6 +24,14 @@
 @media (min-width: $desktopWidth) {
   .feedback {
     @include desktopWidth();
-    padding: 72px 45px 126px 233px;
+    padding: 72px 45px 152px 225px;
+  }
+
+  @media (min-resolution: $retina) {
+    .feedback {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
+      background-position: 50px 0;
+    }
   }
 }

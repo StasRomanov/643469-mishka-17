@@ -1,12 +1,12 @@
 .form__text-list {
   @include normalList();
   padding: 31px 0 0 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tabletWidthCatalog) {
   .form__text-list {
-    margin-bottom: 55px;
-    padding-top: 62px;
+    margin-bottom: 52px;
+    padding-top: 65px;
   }
 }
