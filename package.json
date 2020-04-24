@@ -21,7 +21,12 @@
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.2.0",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "minimist": ">=1.2.3",
+    "acorn": ">=5.7.4",
+    "kind-of": ">=6.0.3",
+    "merge": ">=1.2.1",
+    "deep-extend": ">=0.5.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
